@@ -18,6 +18,9 @@ a:hover{
     color: rgb(193, 116, 7);
     border-bottom: 3px solid rgb(193, 116, 7);
 }
+.orange{
+    color: rgb(242, 145, 9);
+}
 
 /* Layout */
 
@@ -27,8 +30,16 @@ ul{
     list-style-type: none;
 }
 .split{
+    display: -moz-box;
     display: flex;
     flex-direction: row;
+}
+.centered{
+    text-align: center;
+}
+
+.header-outer{
+    border-bottom: thin solid rgb(129, 129, 129);
 }
 
 .container-medium{
@@ -39,4 +50,16 @@ ul{
 
 .half-split{
     width: 450px;
+}
+.quarter-split{
+    width: 230px;
+}
+.three-fourth-split{
+    width: 680px;
+}
+
+/* Nav blocks */
+
+.nav-block-head{
+    padding: 10px;
 }
