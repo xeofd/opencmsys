@@ -15,7 +15,7 @@ a{
 }
 a:hover{
     color: rgb(193, 116, 7);
-    border-bottom: 3px solid rgb(193, 116, 7);
+    border-bottom: 2px solid rgb(193, 116, 7);
 }
 .orange{
     color: rgb(242, 145, 9);
@@ -51,6 +51,19 @@ ul{
     margin: 0 auto;
     width: 630px;
 }
+.container-small{
+    margin: 0 auto;
+    width: 420px;
+}
+
+.split{
+    display: flex;
+}
+
+td{
+    padding: 5px;
+    background: rgb(160, 160, 160);
+}
 
 /* Header styling */
 
@@ -84,7 +97,8 @@ nav{
     height: 67px;
     padding: 5px 15px;
     border: 2px solid rgb(255,255,255);
-    font-size: 25px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 18px;
     color: rgb(32, 32, 32);
     opacity: 0.5;
 }
