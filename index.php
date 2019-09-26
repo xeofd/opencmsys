@@ -65,6 +65,8 @@
 
         </div>
 
+        <?php require("scripts/footer.php"); ?>
+
     </body>
 
 </html>

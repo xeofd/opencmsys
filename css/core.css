@@ -42,6 +42,9 @@ ul{
 .right{
     float: right;
 }
+.center{
+    text-align: center;
+}
 
 .container-large{
     margin: 0 auto;
@@ -58,6 +61,10 @@ ul{
 
 .split{
     display: flex;
+}
+
+.spacer{
+    padding: 10px;
 }
 
 td{
@@ -109,4 +116,49 @@ nav{
 }
 .nav-search:hover, .nav-search:focus{
     opacity: 1;
+}
+
+/* Form elements */
+
+.input-text{
+    padding: 10px;
+    width: 410px;
+    font-family: 'Roboto mono', sans-serif;
+    font-size: 18px;
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 0.5;
+}
+.input-text:hover,.input-text:focus{
+    opacity: 1;
+    border: 2px solid rgb(242, 145, 9);
+}
+.input-text-area{
+    padding: 10px;
+    min-width: 410px;
+    max-width: 410px;
+    min-height: 25px;
+    height: 25px;
+    max-height: 600px;
+    font-family: 'Roboto mono', sans-serif;
+    font-size: 18px;
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 0.5;
+}
+.input-text-area:hover,.input-text-area:focus{
+    opacity: 1;
+    border: 2px solid rgb(242, 145, 9);
+}
+.input-button{
+    margin: 37px 0 0 0;
+    padding: 20px;
+    width: 433px;
+    font-family: 'Roboto mono', sans-serif;
+    font-size: 18px;
+    border: 2px solid rgb(242, 145, 9);
+    background: rgb(66, 66, 66);
+    color: rgb(242, 145, 9);
+}
+.input-button:hover,.input-button:focus{
+    background: rgb(242, 145, 9);
+    color: rgb(32, 32, 32);
 }
