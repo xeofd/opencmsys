@@ -28,22 +28,22 @@
                             
                             <li>
                                 <p>Software</p>
-                                <input type="text" name="client_component" id="client_component" class="input-text" placeholder="Computer model"/>                    
+                                <input type="text" name="client_software_name" id="client_software_name" class="input-text" placeholder="Software"/>                    
                             </li>
 
                             <li>
                                 <p>Original User</p>
-                                <input type="text" name="client_component_user" id="client_component_user" class="input-text" placeholder="User"/>
+                                <input type="text" name="client_software_user" id="client_software_user" class="input-text" placeholder="Original user"/>
+                            </li>
+
+                            <li>
+                                <p>Original PC</p>
+                                <input type="text" name="client_software_pc" id="client_software_pc" class="input-text" placeholder="Original computer"/>
                             </li>
 
                             <li>
                                 <p>Company</p>
-                                <input type="text" name="client_component_company" id="client_component_company" class="input-text" placeholder="Company"/>
-                            </li>
-
-                            <li>
-                                <p>Company Contact</p>
-                                <input type="text" name="client_company_contact" id="client_company_contact" class="input-text" placeholder="Company contact"/>
+                                <input type="text" name="client_software_company" id="client_software_company" class="input-text" placeholder="Company"/>
                             </li>
 
                         </ul>
@@ -57,27 +57,17 @@
                         <ul>
                             
                             <li>
-                                <p>Description of problem</p>
-                                <textarea name="client_problem_description" id="client_problem_description" class="input-text-area" placeholder="Clients problem"></textarea>
+                                <p>License Key</p>
+                                <textarea name="client_software_key" id="client_software_key" class="input-text-area" placeholder="License Key"></textarea>
                             </li>
 
                             <li>
-                                <p>First contact</p>
+                                <p>First use</p>
                                 <input type="date" name="client_component_first_contact" id="client_component_first_contact" class="input-text"/>
                             </li>
 
                             <li>
-                                <p>Collection Date</p>
-                                <input type="date" name="client_component_first_contact" id="client_component_first_contact" class="input-text"/>
-                            </li>
-
-                            <li>
-                                <p>Drop off date</p>
-                                <input type="date" name="client_component_first_contact" id="client_component_first_contact" class="input-text"/>
-                            </li>
-
-                            <li>
-                                <input type="submit" name="client_component_submit" id="client_component_submit" class="input-button" value="Add component"/>
+                                <input type="submit" name="client_component_submit" id="client_component_submit" class="input-button" value="Add license"/>
                             </li>
 
                         </ul>
