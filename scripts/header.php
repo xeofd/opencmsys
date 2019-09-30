@@ -7,7 +7,7 @@ $header_items = <<<EOL
 
     <li class="left">
 
-        <h1 class="orange">revoccmsys</h1>
+        <h1 class="orange">OPENccmsys</h1>
 
     </li>
 
@@ -20,6 +20,12 @@ $header_items = <<<EOL
     <a href="/components.php" class="clear"><li class="right nav-block-head">
 
         <p>Client devices</p>
+
+    </li></a>
+
+    <a href="/" class="clear"><li class="right nav-block-head">
+
+        <p>Homepage</p>
 
     </li></a>
 
