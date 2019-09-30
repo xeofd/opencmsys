@@ -33,7 +33,7 @@ $header_items = <<<EOL
 
 </header>
 
-<nav class="container-large">
+<nav class="container-medium">
 
 <ul>
 

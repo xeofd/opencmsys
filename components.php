@@ -46,7 +46,6 @@
                     <td>User</td>
                     <td>Company Contact</td>
                     <td>More info</td>
-                    <td>Edit</td>
                 </tr>
                 <tr>
                     <td>24/09/19</td>
@@ -55,7 +54,6 @@
                     <td>David Jackson</td>
                     <td>Geraldine</td>
                     <td><a href="#">Goto</a></td>
-                    <td><a href="#">Edit</a></td>
                 </tr>
                 <tr>
                     <td>24/09/19</td>
@@ -64,7 +62,6 @@
                     <td>George Leggate</td>
                     <td>Geraldine</td>
                     <td><a href="#">Goto</a></td>
-                    <td><a href="#">Edit</a></td>
                 </tr>
                 <tr>
                     <td>24/09/19</td>
@@ -73,7 +70,6 @@
                     <td>Angus Craig</td>
                     <td>Geraldine</td>
                     <td><a href="#">Goto</a></td>
-                    <td><a href="#">Edit</a></td>
                 </tr>
             </table>
 

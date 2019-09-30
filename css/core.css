@@ -48,11 +48,11 @@ ul{
 
 .container-large{
     margin: 0 auto;
-    width: 920px;
+    width: 1280px;
 }
 .container-medium{
     margin: 0 auto;
-    width: 630px;
+    width: 930px;
 }
 .container-small{
     margin: 0 auto;
@@ -122,7 +122,7 @@ nav{
 
 .input-text{
     padding: 10px;
-    width: 410px;
+    width: 420px;
     font-family: 'Roboto mono', sans-serif;
     font-size: 18px;
     border: 2px solid rgb(255, 255, 255);
@@ -134,8 +134,8 @@ nav{
 }
 .input-text-area{
     padding: 10px;
-    min-width: 410px;
-    max-width: 410px;
+    min-width: 420px;
+    max-width: 420px;
     min-height: 137px;
     height: 137px;
     max-height: 600px;
