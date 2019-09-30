@@ -27,12 +27,14 @@
                             <td>Date</td>
                             <td>Company</td>
                             <td>Model</td>
+                            <td>Description</td>
                             <td>Link</td>
                         </tr>
                         <tr>
                             <td>24/09/19</td>
                             <td>Glacier</td>
                             <td>Dell Insperion</td>
+                            <td>Network port broken</td>
                             <td><a href="#">Goto</a></td>
                         </tr>
                     </table>

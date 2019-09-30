@@ -14,7 +14,7 @@
 
         <?php require("scripts/header.php"); ?>
 
-        <div class="container-large">
+        <div class="container-medium">
 
             <ul>
 
