@@ -38,7 +38,7 @@
 
                             <li>
                                 <p>Company</p>
-                                <input type="text" name="client_component_company" id="client_component_company" class="input-text" placeholder="Company"/>
+                                <input type="text" name="client_id" id="client_component_company" class="input-text" placeholder="Company"/>
                             </li>
 
                             <li>
@@ -68,12 +68,12 @@
 
                             <li>
                                 <p>Collection Date</p>
-                                <input type="date" name="client_component_first_contact" id="client_component_first_contact" class="input-text"/>
+                                <input type="date" name="client_collection_date" id="client_component_first_contact" class="input-text"/>
                             </li>
 
                             <li>
                                 <p>Drop off date</p>
-                                <input type="date" name="client_component_first_contact" id="client_component_first_contact" class="input-text"/>
+                                <input type="date" name="client_drop_off_date" id="client_component_first_contact" class="input-text"/>
                             </li>
 
                             <li>

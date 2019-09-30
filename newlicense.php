@@ -43,7 +43,7 @@
 
                             <li>
                                 <p>Company</p>
-                                <input type="text" name="client_software_company" id="client_software_company" class="input-text" placeholder="Company"/>
+                                <input type="text" name="client_id" id="client_software_company" class="input-text" placeholder="Company"/>
                             </li>
 
                         </ul>
