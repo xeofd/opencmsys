@@ -45,6 +45,7 @@
                     <td>Model</td>
                     <td>User</td>
                     <td>Company Contact</td>
+                    <td>Description</td>
                     <td>More info</td>
                 </tr>
                 <tr>
@@ -53,6 +54,7 @@
                     <td>Dell Insperion</td>
                     <td>David Jackson</td>
                     <td>Geraldine</td>
+                    <td>Broken network port</td>
                     <td><a href="#">Goto</a></td>
                 </tr>
                 <tr>
@@ -61,6 +63,7 @@
                     <td>Dell Insperion</td>
                     <td>George Leggate</td>
                     <td>Geraldine</td>
+                    <td>Broken network port</td>
                     <td><a href="#">Goto</a></td>
                 </tr>
                 <tr>
@@ -69,6 +72,7 @@
                     <td>Dell Insperion</td>
                     <td>Angus Craig</td>
                     <td>Geraldine</td>
+                    <td>Broken network port</td>
                     <td><a href="#">Goto</a></td>
                 </tr>
             </table>
