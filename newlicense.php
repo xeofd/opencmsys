@@ -27,12 +27,12 @@
                         <ul>
                             
                             <li>
-                                <p>Component model</p>
+                                <p>Software</p>
                                 <input type="text" name="client_component" id="client_component" class="input-text" placeholder="Computer model"/>                    
                             </li>
 
                             <li>
-                                <p>User</p>
+                                <p>Original User</p>
                                 <input type="text" name="client_component_user" id="client_component_user" class="input-text" placeholder="User"/>
                             </li>
 
@@ -44,11 +44,6 @@
                             <li>
                                 <p>Company Contact</p>
                                 <input type="text" name="client_company_contact" id="client_company_contact" class="input-text" placeholder="Company contact"/>
-                            </li>
-
-                            <li>
-                                <p>First contact</p>
-                                <input type="date" name="client_component_first_contact" id="client_component_first_contact" class="input-text"/>
                             </li>
 
                         </ul>
@@ -64,6 +59,11 @@
                             <li>
                                 <p>Description of problem</p>
                                 <textarea name="client_problem_description" id="client_problem_description" class="input-text-area" placeholder="Clients problem"></textarea>
+                            </li>
+
+                            <li>
+                                <p>First contact</p>
+                                <input type="date" name="client_component_first_contact" id="client_component_first_contact" class="input-text"/>
                             </li>
 
                             <li>
