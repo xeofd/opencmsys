@@ -136,8 +136,8 @@ nav{
     padding: 10px;
     min-width: 410px;
     max-width: 410px;
-    min-height: 25px;
-    height: 25px;
+    min-height: 137px;
+    height: 137px;
     max-height: 600px;
     font-family: 'Roboto mono', sans-serif;
     font-size: 18px;
@@ -161,4 +161,5 @@ nav{
 .input-button:hover,.input-button:focus{
     background: rgb(242, 145, 9);
     color: rgb(32, 32, 32);
+    cursor: pointer;
 }
