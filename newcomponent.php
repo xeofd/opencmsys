@@ -3,7 +3,7 @@
 
     <head>
         <!-- Meta tags -->
-        <title>revoccmsys</title>
+        <title>OPENccmsys - Add new component</title>
         <!-- Links -->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap" rel="stylesheet"> 
         <link type="text/css" rel="stylesheet" href="css/core.css" />
