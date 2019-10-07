@@ -11,13 +11,13 @@ $header_items = <<<EOL
 
     </li>
 
-    <a href="/license.php" class="clear"><li class="right nav-block-head">
+    <a href="/licenselist.php" class="clear"><li class="right nav-block-head">
 
             <p>Licenses</p>
 
         </li></a>
 
-    <a href="/components.php" class="clear"><li class="right nav-block-head">
+    <a href="/componentslist.php" class="clear"><li class="right nav-block-head">
 
         <p>Client devices</p>
 
