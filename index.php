@@ -31,11 +31,11 @@
                             <td>Link</td>
                         </tr>
                         <tr>
-                            <td>24/09/19</td>
-                            <td>Glacier</td>
-                            <td>Dell Insperion</td>
-                            <td>Network port broken</td>
-                            <td><a href="#">Goto</a></td>
+                            <td name="client_collection_date">24/09/19</td>
+                            <td name="client_id">Glacier</td>
+                            <td name="client_component">Dell Insperion</td>
+                            <td name="client_problem_description">Network port broken</td>
+                            <td name="component_link"><a href="#">Goto</a></td>
                         </tr>
                     </table>
 

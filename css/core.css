@@ -71,6 +71,22 @@ td{
     text-align: center;
     padding: 5px 15px;
     background: rgb(170, 170, 170);
+    color: rgb(32, 32, 32);
+}
+
+.display{
+    width: 280px;
+    padding: 5px 10px;
+    margin: 5px;
+    background: rgb(160, 160, 160);
+    color: rgb(32, 32, 32);
+}
+.display-large{
+    width: 590px;
+    padding: 5px 10px;
+    margin: 5px;
+    background: rgb(160, 160, 160);
+    color: rgb(32, 32, 32);
 }
 
 /* Header styling */
