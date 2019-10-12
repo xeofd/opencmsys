@@ -1,3 +1,9 @@
+<?php
+
+require('scripts/required.php');
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -18,7 +24,7 @@
 
             <h1>Log client equipment</h1>
 
-            <form action="#" method="POST" id="new_component_form" name="new_component_form" class="orange">
+            <form action="/addlicense.php" method="POST" id="new_component_form" name="new_component_form" class="orange">
 
                 <ul>
 

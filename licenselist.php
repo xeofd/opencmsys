@@ -16,27 +16,7 @@
 
         <div class="container-medium">
 
-            <ul>
-
-                <li class="left">
-
-                    <h2>Client devices</h2>
-
-                </li>
-
-                <li class="left nav-block-list">
-
-                    <a href="#"><p>Current</p></a>
-
-                </li>
-
-                <li class="left nav-block-list">
-
-                    <a href="#"><p>Completed</p></a>
-                    
-                </li>
-
-            </ul>
+            <h2>Licenses</h2>
 
             <table>
                 <tr id="current_devices_title">
