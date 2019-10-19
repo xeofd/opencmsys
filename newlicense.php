@@ -19,7 +19,7 @@ require('scripts/required.php');
 
             <h1>Log licenses</h1>
 
-            <form action="/addlicense.php" method="POST" id="new_component_form" name="new_component_form" class="orange">
+            <form action="/addlicense.php" method="POST" id="new_license_form" name="new_license_form" class="orange">
 
                 <ul>
 
@@ -64,11 +64,11 @@ require('scripts/required.php');
 
                             <li>
                                 <p>First use</p>
-                                <input type="date" name="client_component_first_contact" id="client_component_first_contact" class="input-text"/>
+                                <input type="date" name="client_license_first_use" id="client_software_first_use" class="input-text"/>
                             </li>
 
                             <li>
-                                <input type="submit" name="client_component_submit" id="client_component_submit" class="input-button" value="Add license"/>
+                                <input type="submit" name="client_license_submit" id="client_software_submit" class="input-button" value="Add license"/>
                             </li>
 
                         </ul>

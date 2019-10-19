@@ -6,20 +6,20 @@ require('scripts/required.php');
 open_connection();
 
 // Create the prepared statement
-$statement = $dbt->prepare("INSERT INTO client_license (client_software_name, client_software_user, client_software_pc, client_software_key, client_component_first_use) 
-VALUES (:client_software_name, :client_software_user, :client_software_pc, :client_software_key, :client_componet_first_use);");
+$statement = $dbt->prepare("INSERT INTO client_software (client_software_name, client_software_user, client_software_pc, client_software_key, client_software_first_use) 
+VALUES (:client_software_name, :client_software_user, :client_software_pc, :client_software_key, :client_software_first_use);");
 $statement->bindParam(':client_software_name', $client_software_name);
 $statement->bindParam(':client_software_user', $client_software_user);
 $statement->bindParam(':client_software_pc', $client_software_pc);
 $statement->bindParam(':client_software_key', $client_software_key);
-$statement->bindParam(':client_component_first_use', $client_component_first_use);
+$statement->bindParam(':client_software_first_use', $client_component_first_use);
 
 // Pull the data from the form
 $client_software_name = $_POST['client_software_name'];
 $client_software_user = $_POST['client_software_user'];
 $client_software_pc = $_POST['client_software_pc'];
 $client_software_key = $_POST['client_software_key'];
-$client_component_first_use = $_POST['client_component_first_use'];
+$client_component_first_use = date("Y-m-d", strtotime($_POST['client_software_first_use']));
 
 // Execute the statement
 $statement->execute();
