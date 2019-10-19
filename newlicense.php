@@ -8,12 +8,7 @@ require('scripts/required.php');
 <html>
 
     <head>
-        <!-- Meta tags -->
-        <title>OPENccmsys - Add new license</title>
-        <!-- Links -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap" rel="stylesheet"> 
-        <link type="text/css" rel="stylesheet" href="css/core.css" />
-        <!-- Scripts -->
+        <?php require('scripts/tags.php') ?>
     </head>
 
     <body>
@@ -22,7 +17,7 @@ require('scripts/required.php');
 
         <div class="container-medium">
 
-            <h1>Log client equipment</h1>
+            <h1>Log licenses</h1>
 
             <form action="/addlicense.php" method="POST" id="new_component_form" name="new_component_form" class="orange">
 

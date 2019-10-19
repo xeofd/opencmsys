@@ -5,7 +5,7 @@ body{
     padding: 0;
     background: rgb(24, 24, 24);
     color: rgb(68, 68, 68);
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -125,7 +125,7 @@ nav{
     height: 67px;
     padding: 5px 15px;
     border: 2px solid rgb(255,255,255);
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     color: rgb(32, 32, 32);
     opacity: 0.5;
@@ -139,7 +139,7 @@ nav{
 .input-text{
     padding: 10px;
     width: 420px;
-    font-family: 'Roboto mono', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     border: 2px solid rgb(255, 255, 255);
     opacity: 0.5;
@@ -155,7 +155,7 @@ nav{
     min-height: 137px;
     height: 137px;
     max-height: 600px;
-    font-family: 'Roboto mono', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     border: 2px solid rgb(255, 255, 255);
     opacity: 0.5;
@@ -168,7 +168,7 @@ nav{
     margin: 37px 0 0 0;
     padding: 20px;
     width: 443px;
-    font-family: 'Roboto mono', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     border: 2px solid rgb(183, 28, 28);
     background: rgb(183, 28, 28);

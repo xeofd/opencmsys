@@ -2,12 +2,7 @@
 <html>
 
     <head>
-        <!-- Meta tags -->
-        <title>OPENccmsys - Licenses</title>
-        <!-- Links -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap" rel="stylesheet"> 
-        <link type="text/css" rel="stylesheet" href="css/core.css" />
-        <!-- Scripts -->
+        <?php require('scripts/tags.php') ?>
     </head>
 
     <body>
