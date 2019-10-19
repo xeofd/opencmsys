@@ -64,7 +64,7 @@ require('scripts/required.php');
 
                             <li>
                                 <p>First use</p>
-                                <input type="date" name="client_license_first_use" id="client_software_first_use" class="input-text"/>
+                                <input type="date" name="client_software_first_use" id="client_software_first_use" class="input-text"/>
                             </li>
 
                             <li>
