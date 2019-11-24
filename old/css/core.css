@@ -17,6 +17,10 @@ a:hover{
     color: rgb(211, 47, 47);
     border-bottom: 2px solid rgb(211, 47, 47);
 }
+::selection{
+    background: rgb(183, 28, 28);
+    color: rgb(255, 255, 255);
+}
 .orange{
     color: rgb(183, 28, 28);
 }
@@ -143,7 +147,7 @@ nav{
     font-size: 18px;
     border: 2px solid rgb(255, 255, 255);
     opacity: 0.5;
-}
+}Recent licenses
 .input-text:hover,.input-text:focus{
     opacity: 1;
     border: 2px solid rgb(255,255,255);

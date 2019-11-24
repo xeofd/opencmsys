@@ -11,7 +11,7 @@ CREATE TABLE client_component(
     client_component VARCHAR(256) NOT NULL,
     client_component_user VARCHAR(256) NOT NULL,
     client_company_contact VARCHAR(256) NOT NULL,
-    client_problem_description VARCHAR(2048) NOT NULL,
+    client_problem_description VARCHAR(1024) NOT NULL,
     client_first_contact DATE NOT NULL,
     client_collection_date DATE NOT NULL,
     client_drop_off_date DATE NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE client_software(
     client_software_name VARCHAR(128) NOT NULL,
     client_software_user VARCHAR(256) NOT NULL,
     client_software_pc VARCHAR(256) NOT NULL,
-    client_software_key VARCHAR(2048) NOT NULL,
+    client_software_key VARCHAR(512) NOT NULL,
     client_software_first_use DATE NOT NULL,
     client_id INT,
     CONSTRAINT license_fk

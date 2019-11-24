@@ -5,7 +5,7 @@ require('scripts/required.php');
 // Open a database connection
 open_connection();
 
-// Create the prepared statement
+// Create the prepared statement and bind the parameters to it
 $statement = $dbt->prepare("INSERT INTO client_software (client_software_name, client_software_user, client_software_pc, client_software_key, client_software_first_use) 
 VALUES (:client_software_name, :client_software_user, :client_software_pc, :client_software_key, :client_software_first_use);");
 $statement->bindParam(':client_software_name', $client_software_name);

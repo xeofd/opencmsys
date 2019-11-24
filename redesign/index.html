@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Meta tags -->
+        <title>openCCMSYS</title>
+        <!-- Links -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <!-- Scripts -->
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Start MD Layout-->
+
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+
+            <header class="mdl-layout__header">
+
+                <div class="mdl-layout__header-row">
+                    <!-- Logo -->
+                    <span class="mdl-layout-title">openCCMSYS</span>
+                </div>
+
+                <!-- Content tabs -->
+
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                    <a href="#all-items" class="mdl-layout__tab is-active">All items</a>
+                    <a href="#client-hardware" class="mdl-layout__tab">Client hardware</a>
+                    <a href="#client-licenses" class="mdl-layout__tab">Client licenses</a>
+                </div>
+
+            </header>
+
+            <!-- Side panel -->
+
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">openCCMSYS</span>
+                <!-- Nav pannel -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="/">Home</a>
+                    <a class="mdl-navigation__link" href="/redesign/about.php">About</a>
+                    <a class="mdl-navigation__link" href="https://github.com/xeofd/openccmsys">GitHub</a>
+                </nav>
+                <!-- Footer -->                    
+            </div>
+
+            <!-- Content -->
+
+            <div class="mdl-layout__content">
+                <section class="mdl-layout__tab-panel is-active" id="all-items">
+                    <div class="page-content">
+                    </div>
+                </section>
+                <section class="mdl-layout__tab-panel" id="client-hardware">
+                    <div class="page-content">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <h1>Client hardware list</h1>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col">
+                                <h1>Input new hardware</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mdl-layout__tab-panel" id="client-licenses">
+                    <div class="page-content">
+                        <h1>Client licenses</h1>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+    </body>
+
+    <footer>
+
+    </footer>
+
+</html>

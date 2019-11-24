@@ -13,7 +13,7 @@
 
             <h1>Log client equipment</h1>
 
-            <form action="#" method="POST" id="new_component_form" name="new_component_form" class="orange">
+            <form action="/addcomponent.php" method="POST" id="new_component_form" name="new_component_form" class="orange">
 
                 <ul>
 
@@ -58,17 +58,17 @@
                             
                             <li>
                                 <p>Description of problem</p>
-                                <textarea name="client_problem_description" id="client_problem_description" class="input-text-area" placeholder="Clients problem"></textarea>
+                                <textarea name="client_problem_description" id="client_problem_description" class="input-text-area" placeholder="Clients problem" maxlength="2048"></textarea>
                             </li>
 
                             <li>
                                 <p>Collection Date</p>
-                                <input type="date" name="client_collection_date" id="client_component_first_contact" class="input-text"/>
+                                <input type="date" name="client_collection_date" id="client_collection_date" class="input-text"/>
                             </li>
 
                             <li>
                                 <p>Drop off date</p>
-                                <input type="date" name="client_drop_off_date" id="client_component_first_contact" class="input-text"/>
+                                <input type="date" name="client_drop_off_date" id="client_drop_off_date" class="input-text"/>
                             </li>
 
                             <li>
