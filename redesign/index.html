@@ -7,13 +7,13 @@
         <!-- Links -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-red.min.css" />
         <!-- Scripts -->
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     </head>
 
     <body>
-        <!-- Start MD Layout-->
+        <!-- Start material Layout-->
 
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
 
@@ -52,6 +52,49 @@
             <div class="mdl-layout__content">
                 <section class="mdl-layout__tab-panel is-active" id="all-items">
                     <div class="page-content">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--12-col">
+                            </div>
+                        </div>
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--6-col">
+                                <h3>Client hardware</h3>
+                                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                                    <thead>
+                                        <tr>
+                                            <th class="mdl-data-table__cell mdl-data-table__cell--non-numeric">Hardware</th>
+                                            <th class="mdl-data-table__cell mdl-data-table__cell--non-numeric">Client</th>
+                                            <th class="mdl-data-table__cell mdl-data-table__cell--non-numeric">User</th>
+                                            <th class="mdl-data-table__cell mdl-data-table__cell--non-numeric">Last Update</th>
+                                            <th class="mdl-data-table__cell mdl-data-table__cell--non-numeric">More info</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="mdl-data-table__cell">Dell Insperon</td>
+                                            <td>Palmers</td>
+                                            <td>Phil</td>
+                                            <td>24/11/19</td>
+                                            <td><a href="#">More info</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col">
+                                <h3>Client licenses</h3>
+                                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                                    <thead>
+                                        <tr>
+                                            <th class="mdl-data-table__cell">Hardware</th>
+                                            <th>Client</th>
+                                            <th>User</th>
+                                            <th>Last Update</th>
+                                            <th>More info</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="mdl-layout__tab-panel" id="client-hardware">
