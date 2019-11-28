@@ -1,0 +1,106 @@
+/* 
+
+Core CSS for stack-design. Required for the most basic functionality.
+
+About stack-design, https://www.benfd.uk/projects/stack-design
+
+To learn how to use stack-design goto https://www.benfd.uk/learn/stack-design
+
+*/
+
+/* Variable set */
+
+:root{
+    /* Colour variables */
+    --stack-primary-color: rgb(183, 28, 28);
+    --stack-secondary-color: rgb(44, 44, 44);
+    --stack-hovered-color: rgb(211, 47, 47);
+    --stack-text-colour: rgb(225,225,225);
+    --stack-shadowed-color: rgb(27, 27, 27);
+    --stack-background-color: rgb(59, 59, 59);
+    /* Typography variables */
+    --stack-primary-font: 'Lato', sans-serif;
+    --stack-secondary-font: 'Source Code Pro', monospace;
+}
+
+/* Basic elements */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--stack-background-color);
+    color: var(--stack-text-colour);
+    font-family: var(--stack-primary-font);
+    font-size: 18px;
+    line-height: 1.5;
+}
+::selection{
+    background: var(--stack-primary-color);
+    color: var(--stack-text-colour);
+}
+a{
+    color: var(--stack-primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: var(--stack-hovered-color);
+    border-bottom: 2px solid var(--stack-hovered-color);
+}
+h1, h2, h3, h4{
+    margin: 0;
+}
+.stack-background-primary{
+    background: var(--stack-primary-color);
+}
+.stack-background-secondary{
+    background: var(--stack-secondary-color);
+}
+.stack-font-primary{
+    color: var(--stack-primary-color);
+}
+.stack-font-secondary{
+    color: var(--stack-secondary-color);
+}
+.stack-bold{
+    font-weight: bold;
+}
+
+/* Layout */
+
+.stack-head-container{
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0px 5px 15px var(--stack-shadowed-color);
+}
+
+/* Layout > Header */
+
+.stack-head-container > div{
+    margin: 0 auto;
+    width: 1250px;
+    display: flex;
+}
+.stack-head-container > div > .stack-spacer-horizontal{
+    width: 45%;
+}
+.stack-head-container > div > h1{
+    margin: 4px 0 0 0;
+}
+
+/* Layout > Navigation */
+
+.stack-head-nav > ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.stack-head-nav > ul > a > li{
+    padding: 0 20px;
+    float: left;
+    color: var(--stack-primary-color);
+    border-bottom: 3px solid transparent;
+}
+.stack-head-nav > ul > a > li:hover{
+    border-bottom: 3px solid var(--stack-primary-color);
+}
