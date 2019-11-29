@@ -49,26 +49,17 @@ a:hover{
 }
 h1, h2, h3, h4{
     margin: 0;
-}
-.stack-background-primary{
-    background: var(--stack-primary-color);
-}
-.stack-background-secondary{
-    background: var(--stack-secondary-color);
-}
-.stack-font-primary{
-    color: var(--stack-primary-color);
-}
-.stack-font-secondary{
-    color: var(--stack-secondary-color);
-}
-.stack-bold{
-    font-weight: bold;
+    font-family: var(--stack-secondary-font);
 }
 
 /* Layout */
 
-.stack-head-container{
+.stack-container{
+    margin: 0 auto;
+    width: 1250px;
+    display: flex;
+}
+.stack-container-head{
     margin: 0;
     padding: 10px;
     box-shadow: 0px 5px 15px var(--stack-shadowed-color);
@@ -76,20 +67,19 @@ h1, h2, h3, h4{
 
 /* Layout > Header */
 
-.stack-head-container > div{
-    margin: 0 auto;
-    width: 1250px;
-    display: flex;
-}
-.stack-head-container > div > .stack-spacer-horizontal{
+.stack-container-head > div > .stack-spacer-horizontal{
     width: 45%;
 }
-.stack-head-container > div > h1{
+.stack-container-head > div > h1{
     margin: 4px 0 0 0;
 }
 
 /* Layout > Navigation */
 
+
+.stack-head-nav{
+    overflow: hidden;
+}
 .stack-head-nav > ul{
     margin: 0;
     padding: 0;
@@ -104,4 +94,22 @@ h1, h2, h3, h4{
 .stack-head-nav > ul > a > li:hover{
     border-bottom: 3px solid var(--stack-primary-color);
     box-shadow: 0px 5px 15px var(--stack-shadowed-color);
+}
+
+/* Layout > Visuals */
+
+.stack-background-primary{
+    background: var(--stack-primary-color);
+}
+.stack-background-secondary{
+    background: var(--stack-secondary-color);
+}
+.stack-font-primary{
+    color: var(--stack-primary-color);
+}
+.stack-font-secondary{
+    color: var(--stack-secondary-color);
+}
+.stack-bold{
+    font-weight: bold;
 }

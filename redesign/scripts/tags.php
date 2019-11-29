@@ -3,11 +3,10 @@ $header_tags = <<<EOL
 <!-- Meta tags -->
 <title>openCCMSYS</title>
 <!-- Links -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-red.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Source+Code+Pro&display=swap" rel="stylesheet">
+<link href="css/core.css" rel="stylesheet" type="text/css" />
 <!-- Scripts -->
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="scripts/core.js"></script>
 EOL;
 
 ?>
