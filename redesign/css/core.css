@@ -21,6 +21,8 @@ To learn how to use stack-design goto https://www.benfd.uk/learn/stack-design
     /* Typography variables */
     --stack-primary-font: 'Lato', sans-serif;
     --stack-secondary-font: 'Source Code Pro', monospace;
+    /* Styling variables */
+    --stack-box-shadow: 0px 5px 15px var(--stack-shadowed-color);
 }
 
 /* Basic elements */
@@ -60,15 +62,15 @@ h1, h2, h3, h4{
     display: flex;
 }
 .stack-container-head{
-    margin: 0;
+    margin: 0 0 30px 0;
     padding: 10px;
-    box-shadow: 0px 5px 15px var(--stack-shadowed-color);
+    box-shadow: var(--stack-box-shadow);
 }
 
 /* Layout > Header */
 
 .stack-container-head > div > .stack-spacer-horizontal{
-    width: 45%;
+    width: 40%;
 }
 .stack-container-head > div > h1{
     margin: 4px 0 0 0;
@@ -78,6 +80,7 @@ h1, h2, h3, h4{
 
 
 .stack-head-nav{
+    padding: 0 10px;
     overflow: hidden;
 }
 .stack-head-nav > ul{
@@ -93,7 +96,62 @@ h1, h2, h3, h4{
 }
 .stack-head-nav > ul > a > li:hover{
     border-bottom: 3px solid var(--stack-primary-color);
-    box-shadow: 0px 5px 15px var(--stack-shadowed-color);
+    box-shadow: var(--stack-box-shadow);
+}
+
+/* Layout > Grid */
+
+.stack-cell{
+    margin: 0 10px;
+    background: var(--stack-secondary-color);
+    box-shadow: var(--stack-box-shadow);
+}
+.stack-cell:first-child{
+    margin: 0 10px 0 0;
+}
+.stack-cell:last-child{
+    margin: 0 0 0 10px;
+}
+.stack-cell--1{
+    width: 10%;
+}
+.stack-cell--2{
+    width: 20%;
+}
+.stack-cell--3{
+    width: 30%;
+}
+.stack-cell--4{
+    width: 40%;
+}
+.stack-cell--5{
+    width: 50%;
+}
+.stack-cell--6{
+    width: 60%;
+}
+.stack-cell--7{
+    width: 70%;
+}
+.stack-cell--8{
+    width: 80%;
+}
+.stack-cell--9{
+    width: 90%;
+}
+.stack-cell--10{
+    width: 100%;
+}
+
+/* Cell > Content */
+
+.stack-cell--title{
+    width: 100%;
+    background: var(--stack-primary-color);
+    text-align: center;
+}
+.stack-cell--content{
+    margin: 10px;
 }
 
 /* Layout > Visuals */
@@ -112,4 +170,10 @@ h1, h2, h3, h4{
 }
 .stack-bold{
     font-weight: bold;
+}
+
+/* Tables */
+
+.stack-table{
+    
 }
