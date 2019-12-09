@@ -58,7 +58,7 @@ h1, h2, h3, h4{
 
 .stack-container{
     margin: 0 auto;
-    width: 1250px;
+    width: 1450px;
     display: flex;
 }
 .stack-container-head{
@@ -70,7 +70,7 @@ h1, h2, h3, h4{
 /* Layout > Header */
 
 .stack-container-head > div > .stack-spacer-horizontal{
-    width: 40%;
+    width: 50%;
 }
 .stack-container-head > div > h1{
     margin: 4px 0 0 0;
@@ -151,7 +151,7 @@ h1, h2, h3, h4{
     text-align: center;
 }
 .stack-cell--title > h1,h2,h3,h4{
-    padding: 5px 0;
+    padding: 10px;
 }
 .stack-cell--content{
     margin: 10px;
@@ -176,3 +176,22 @@ h1, h2, h3, h4{
 }
 
 /* Tables */
+
+.stack-table{
+    padding: 0 10px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.stack-table--data-row:hover{
+    background: var(--stack-background-color);
+}
+.stack-table--data-head{
+    padding: 10px 0;
+}
+.stack-table--data{
+    padding: 5px 0;
+    cursor: pointer;
+    border-bottom: 1px solid var(--stack-primary-color);
+    border-top: 1px solid var(--stack-primary-color);
+}
