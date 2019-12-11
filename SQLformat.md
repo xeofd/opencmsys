@@ -2,10 +2,14 @@
 
 This is the SQL code for the simple database used to store information for use in openCCMSYS. 
 There are three tables in the database, **clients**, **client_components** and **client_licenses**. The tables are pretty self explanitory, the **clients** table holds your company clients, the **client_components** holds the hardware you currently have/had in for repair/setup and which client the hardware belonged to and the **client_licenses** table holds the license for any software that clients have.
+
 ---
+
 #### Table relationships ###
 The **clients** table has a *one* to *many* relationship with both **client_components** and **client_licenses** individually, as one client can have many peices of hardware and one client can have many software licenses.
+
 ---
+
 ## SQL Code to enter into CLI ##
 
 ```
