@@ -6,7 +6,7 @@ There are three tables in the database, **clients**, **client_hardware** and **c
 ---
 
 #### Table relationships ###
-The **clients** table has a *one* to *many* relationship with both **client_components** and **client_licenses** individually, as one client can have many peices of hardware and one client can have many software licenses.
+The **clients** table has a *one* to *many* relationship with both **client_hardware** and **client_licenses** individually, as one client can have many peices of hardware and one client can have many software licenses.
 
 ---
 
