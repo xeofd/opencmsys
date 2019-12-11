@@ -1,13 +1,17 @@
+#SQL for openCCMSYS
+
 CREATE DATABASE openccmsys;
 
 CREATE TABLE clients(
 client_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-client_name VARCHAR(128) NOT NULL,
-client_number INT(11) NOT NULL
+client_company_name VARCHAR(128) NOT NULL,
+client_contact_number INT(11) NOT NULL,
+client_component_total INT(1024) NOT NULL,
+client_license_total INT(1024) NOT NULL
 ) ENGINE = INNODB;
 
 CREATE TABLE client_component(
-    component_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    client_component_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     client_component VARCHAR(256) NOT NULL,
     client_component_user VARCHAR(256) NOT NULL,
     client_company_contact VARCHAR(256) NOT NULL,
