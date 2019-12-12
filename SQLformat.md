@@ -54,7 +54,8 @@ CREATE TABLE client_licenses(
     client_license_recent_user VARCHAR(64) NOT NULL,
     client_license_recent_pc VARCHAR(128) NOT NULL,
     client_license_key VARCHAR(512) NOT NULL,
-    client_software_first_use DATE NOT NULL,
+    client_license_first_use DATE NOT NULL,
+    client_license_recent_use DATE NOT NULL,
     client_id INT,
     CONSTRAINT license_fk
     FOREIGN KEY (client_id)

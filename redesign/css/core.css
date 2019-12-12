@@ -53,6 +53,12 @@ h1, h2, h3, h4{
     margin: 0;
     font-family: var(--stack-secondary-font);
 }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
 
 /* Layout */
 
@@ -65,6 +71,10 @@ h1, h2, h3, h4{
     margin: 0 0 30px 0;
     padding: 10px;
     box-shadow: var(--stack-box-shadow);
+}
+.stack-container-footer{
+    margin: 20px auto;
+    width: 1450px;
 }
 
 /* Layout > Header */
@@ -173,6 +183,21 @@ h1, h2, h3, h4{
 }
 .stack-bold{
     font-weight: bold;
+}
+.stack-centered{
+    text-align: center;
+}
+
+/* Layout > Footers */
+.stack-footer--quick-links{
+    margin: 0 0 10px 0;
+}
+.stack-footer--quick-links > p{
+    color: var(--stack-secondary-color);
+}
+.stack-footer--copyright{
+    font-size: 15px;
+    color: var(--stack-secondary-color);
 }
 
 /* Tables */
