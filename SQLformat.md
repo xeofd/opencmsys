@@ -38,6 +38,7 @@ CREATE TABLE client_hardware(
     client_hardware_collection_date DATE NOT NULL,
     client_hardware_return_date DATE NOT NULL,
     client_hardware_is_active TINYINT NOT NULL,
+    client_hardware_link VARCHAR(64) NOT NULL,
     client_id INT,
     CONSTRAINT component_fk
     FOREIGN KEY (client_id)
@@ -56,9 +57,26 @@ CREATE TABLE client_licenses(
     client_license_key VARCHAR(512) NOT NULL,
     client_license_first_use DATE NOT NULL,
     client_license_recent_use DATE NOT NULL,
+    client_license_link VARCHAR(64) NOT NULL,
     client_id INT,
     CONSTRAINT license_fk
     FOREIGN KEY (client_id)
     REFERENCES clients(client_id)
 ) ENGINE = INNODB;
+```
+
+```
+CREATE USER 'occmsysro'@'localhost'
+    IDENTIFIED BY '{ENTER PASSWORD}';
+CREATE USER 'occmsysrw'@'localhost'
+    IDENTIFIED BY '{ENTER PASSWORD}';
+```
+
+```
+GRANT SELECT,INSERT,UPDATE,DELETE,CREATE
+    ON openccmsys.*
+    TO 'occmsysrw'@'localhost';
+GRANT SELECT
+    ON openccmsys.*
+    TO 'occmsysro'@'localhost';
 ```

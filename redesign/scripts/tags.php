@@ -9,4 +9,6 @@ $header_tags = <<<EOL
 <script src="scripts/core.js"></script>
 EOL;
 
+echo($header_tags);
+
 ?>

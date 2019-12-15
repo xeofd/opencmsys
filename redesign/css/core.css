@@ -80,7 +80,7 @@ ul{
 /* Layout > Header */
 
 .stack-container-head > div > .stack-spacer-horizontal{
-    width: 50%;
+    width: 47%;
 }
 .stack-container-head > div > h1{
     margin: 4px 0 0 0;
@@ -90,7 +90,6 @@ ul{
 
 
 .stack-head-nav{
-    padding: 0 10px;
     overflow: hidden;
 }
 .stack-head-nav > ul{
@@ -99,6 +98,7 @@ ul{
     list-style-type: none;
 }
 .stack-head-nav > ul > a > li{
+    margin: 0 10px;
     padding: 0 20px;
     float: left;
     color: var(--stack-primary-color);
@@ -166,6 +166,9 @@ ul{
 .stack-cell--content{
     margin: 10px;
 }
+.stack-cell--content-table{
+    margin: 0;
+}
 
 /* Layout > Visuals */
 
@@ -217,6 +220,5 @@ ul{
 .stack-table--data{
     padding: 5px 0;
     cursor: pointer;
-    border-bottom: 1px solid var(--stack-primary-color);
     border-top: 1px solid var(--stack-primary-color);
 }

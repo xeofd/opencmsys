@@ -2,13 +2,9 @@
 <html>
 
     <head>
-        <!-- Meta tags -->
-        <title>openCCMSYS</title>
-        <!-- Links -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Source+Code+Pro&display=swap" rel="stylesheet">
-        <link href="css/core.css" rel="stylesheet" type="text/css" />
-        <!-- Scripts -->
-        <script src="scripts/core.js"></script>
+
+    <?php require('scripts/tags.php'); ?>
+
     </head>
 
     <body>
@@ -17,39 +13,11 @@
 
         <div class="stack-full-container">
 
-            <!-- Begin header content -->
+        <?php
+        
+        require('scripts/header.php');
 
-            <header class="stack-container-head stack-background-secondary stack-font-primary" id="stack_container_head">
-                
-                <div class="stack-container">
-
-                    <h1 class="stack-title">openCCMSYS</h1>
-
-                    <div class="stack-spacer-horizontal"></div>
-    
-                    <nav class="stack-head-nav">
-    
-                        <ul>
-    
-                            <a href="#complete-components"><li class="stack-head-nav stack-nav-block">
-                                <p>Home</p>
-                            </li></a>
-    
-                            <a href="#client-components"><li class="stack-head-nav stack-nav-block">
-                                <p>Client components</p>
-                            </li></a>
-    
-                            <a href="#client-licenses"><li class="stack-head-nav stack-nav-block">
-                                <p>Client Licenses</p>
-                            </li></a>
-    
-                        </ul>
-    
-                    </nav>
-
-                </div>
-
-            </header>
+        ?>
 
             <!-- Begin body content -->
 
@@ -67,7 +35,7 @@
 
                         </div>
 
-                        <div class="stack-cell--content">
+                        <div class="stack-cell--content-table">
 
                             <table class="stack-table">
                                 <thead>
@@ -118,22 +86,11 @@
 
             </div>
 
-            <footer class="stack-container-footer stack-centered">
+            <?php 
+            
+                require('scripts/footer.php');
 
-                <div class="stack-footer--quick-links">
-
-                    <p><a href="/">Home</a> | <a href="https://github.com/xeofd/openccmsys">GitHub</a> | <a href="https://www.benfd.uk/projects/openccmsys">About openCCMSYS</a></p>
-
-                </div>
-
-                <div class="stack-footer--copyright">
-
-                    <p>openCCMSYS, created by Ben @ <a href="https://www.benfd.uk/">benfd.uk</a></p>
-                    <p>Copyright &copy;2019 benfd.uk</p>
-
-                </div>
-
-            </footer>
+            ?>
 
         </div>
 
