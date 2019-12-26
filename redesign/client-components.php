@@ -35,7 +35,7 @@
 
                         </div>
 
-                        <div class="stack-cell--content-table">
+                        <div class="stack-cell--max-width">
 
                             <table class="stack-table">
                                 <thead>
@@ -44,6 +44,8 @@
                                         <th class="stack-table--data-head">Client</th>
                                         <th class="stack-table--data-head">User</th>
                                         <th class="stack-table--data-head">Issue</th>
+                                        <th class="stack-table--data-head">Last Update</th>
+                                        <th class="stack-table--data-head">Complete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -52,6 +54,25 @@
                                         <td class="stack-table--data" name="component_list_client">Glacier</td>
                                         <td class="stack-table--data" name="component_list_user">Jane Doe</td>
                                         <td class="stack-table--data" name="component_list_issue">Screen flashing on and off</td>
+                                        <td class="stack-table--data" name="component_list_date">12/12/19</td>
+                                        <td class="stack-table--data" name="component_list_complete">
+                                            <form>
+                                                <input type="checkbox" class="stack-form--checkbox" checked>
+                                            </form>
+                                        </td>
+                                        <td class="stack-table--data" name="component_list_link"><a href="#" class="stack-table--link">More info</a></td>
+                                    </tr>
+                                    <tr class="stack-table--data-row">
+                                        <td class="stack-table--data" name="component_list_hardware">HP Probook</td>
+                                        <td class="stack-table--data" name="component_list_client">Glacier</td>
+                                        <td class="stack-table--data" name="component_list_user">Jane Doe</td>
+                                        <td class="stack-table--data" name="component_list_issue">Screen flashing on and off</td>
+                                        <td class="stack-table--data" name="component_list_date">12/12/19</td>
+                                        <td class="stack-table--data" name="component_list_complete">
+                                            <form>
+                                            <input type="checkbox" class="stack-form--checkbox">
+                                            </form>
+                                        </td>
                                         <td class="stack-table--data" name="component_list_link"><a href="#" class="stack-table--link">More info</a></td>
                                     </tr>
                                 </tbody>
@@ -66,6 +87,46 @@
                         <div class="stack-cell--title">
 
                             <h2>Add hardware</h2>
+
+                        </div>
+
+                        <div class="stack-cell--max-width">
+
+                            <form method="POST" name="form_add_hardware">
+
+                                <div class="stack-container stack-container--form">
+
+                                    <p>Hardware Make</p>
+                                    <input type="text" name="add_hardware_make" class="stack-form--text-input" placeholder="Hardware Make" />
+
+                                </div>
+
+                                <div class="stack-container stack-container--form">
+
+                                    <p>Hardware Model</p>
+                                    <input type="text" name="add_hardware_model" class="stack-form--text-input" placeholder="Hardware Model" />
+
+                                </div>
+
+                                <div class="stack-container stack-container--form">
+
+                                    <p>Hardware User</p>
+                                    <input type="text" name="add_hardware_user" class="stack-form--text-input" placeholder="Hardware User" />   
+
+                                </div>
+
+                                <div class="stack-container stack-container--form">
+
+                                    <p>Client</p>
+                                    <select class="stack-form--select">  
+                                        <option name="add_hardware_company">Glacier Energy Services</option>
+                                        <option name="add_hardware_company">Palmers Scafolding</option>
+                                        <option name="add_hardware_company">The Normandy Hotel</option>
+                                    </select> 
+
+                                </div>
+
+                            </form>
 
                         </div>
 

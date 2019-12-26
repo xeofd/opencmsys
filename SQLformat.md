@@ -29,8 +29,8 @@ CREATE TABLE clients(
 ```
 CREATE TABLE client_hardware(
     client_hardware_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    client_hardware_type VARCHAR(128) NOT NULL,
-    client_hardware_name VARCHAR(128) NOT NULL,
+    client_hardware_make VARCHAR(128) NOT NULL,
+    client_hardware_model VARCHAR(128) NOT NULL,
     client_hardware_user VARCHAR(64) NOT NULL,
     client_hardware_issue VARCHAR(2048) NOT NULL,
     client_hardware_initial_contact DATE NOT NULL,

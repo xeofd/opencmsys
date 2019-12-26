@@ -66,6 +66,7 @@ ul{
     margin: 0 auto;
     width: 1450px;
     display: flex;
+    align-items: flex-start;
 }
 .stack-container-head{
     margin: 0 0 30px 0;
@@ -166,7 +167,7 @@ ul{
 .stack-cell--content{
     margin: 10px;
 }
-.stack-cell--content-table{
+.stack-cell--max-width{
     margin: 0;
 }
 
@@ -221,4 +222,50 @@ ul{
     padding: 5px 0;
     cursor: pointer;
     border-top: 1px solid var(--stack-primary-color);
+}
+
+/* User Interface items */
+
+/* Form elements */
+
+form{
+    margin: 0;
+    padding: 10px;
+}
+.stack-container--form > p{
+    width: 150px;
+}
+.stack-form--text-input{
+    margin: 10px 0;
+    padding: 10px;
+    width: 380px;
+    height: 20px;
+    border: 3px solid transparent;
+    font-family: var(--stack-primary-font);
+    font-size: 20px;
+    opacity: 0.5;
+}
+.stack-form--text-input:hover{
+    opacity: 0.75;
+}
+.stack-form--text-input:focus{
+    opacity: 1.0;
+}
+.stack-form--checkbox{
+    cursor: pointer;
+}
+.stack-form--select{
+    margin: 10px 0;
+    padding: 5px;
+    width: 405px;
+    border: 3px solid transparent;
+    font-family: var(--stack-primary-font);
+    font-size: 20px;
+    opacity: 0.5;
+}
+.stack-form--select:hover{
+    opacity: 0.75;
+}
+.stack-form--select:focus{
+    opacity: 1.0;
 }
