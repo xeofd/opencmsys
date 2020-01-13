@@ -3,7 +3,7 @@
 $header = <<<EOL
 <!-- Begin header content -->
 
-<header class="stack-container-head stack-background-secondary stack-font-primary" id="stack_container_head">
+<header class="stack-container-head stack-background--secondary stack-font--primary" id="stack_container_head">
     
     <div class="stack-container">
 
@@ -15,15 +15,15 @@ $header = <<<EOL
 
             <ul>
 
-                <a href="/"><li class="stack-head-nav stack-nav-block">
+                <a href="index.php"><li class="stack-head-nav stack-nav-block">
                     <p>Home</p>
                 </li></a>
 
-                <a href="/client-components.php"><li class="stack-head-nav stack-nav-block">
+                <a href="client-hardware.php"><li class="stack-head-nav stack-nav-block">
                     <p>Client components</p>
                 </li></a>
 
-                <a href="/client-licenses.php"><li class="stack-head-nav stack-nav-block">
+                <a href="client-licenses.php"><li class="stack-head-nav stack-nav-block">
                     <p>Client Licenses</p>
                 </li></a>
 

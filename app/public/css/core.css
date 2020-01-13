@@ -13,6 +13,7 @@ To learn how to use stack-design goto https://www.benfd.uk/learn/stack-design
 :root{
     /* Colour variables */
     --stack-primary-color: rgb(183, 28, 28);
+    --stack-primary-color-darkened: rgb(164, 28, 28);
     --stack-secondary-color: rgb(44, 44, 44);
     --stack-hovered-color: rgb(211, 47, 47);
     --stack-text-colour: rgb(225,225,225);
@@ -173,16 +174,20 @@ ul{
 
 /* Layout > Visuals */
 
-.stack-background-primary{
+.stack-background--primary{
     background: var(--stack-primary-color);
 }
-.stack-background-secondary{
+.stack-background--secondary{
     background: var(--stack-secondary-color);
 }
-.stack-font-primary{
+.stack-background--null{
+    background: transparent;
+    box-shadow: none;
+}
+.stack-font--primary{
     color: var(--stack-primary-color);
 }
-.stack-font-secondary{
+.stack-font--secondary{
     color: var(--stack-secondary-color);
 }
 .stack-bold{
@@ -219,7 +224,7 @@ ul{
     padding: 10px 0;
 }
 .stack-table--data{
-    padding: 5px 0;
+    padding: 15px 0;
     cursor: pointer;
     border-top: 1px solid var(--stack-primary-color);
 }
@@ -230,7 +235,14 @@ ul{
 
 form{
     margin: 0;
-    padding: 10px;
+    padding: 0;
+}
+.stack-form{
+    padding: 0 10px;
+}
+.stack-container--form{
+    display: flex;
+    margin: 5px 0;
 }
 .stack-container--form > p{
     width: 150px;
@@ -247,8 +259,28 @@ form{
 }
 .stack-form--text-input:hover{
     opacity: 0.75;
+    cursor: text;
 }
 .stack-form--text-input:focus{
+    opacity: 1.0;
+}
+.stack-form--text-area{
+    padding: 5px;
+    max-width: 390px;
+    min-width: 390px;
+    width: 390px;
+    max-height: 240px;
+    min-height: 70px;
+    height: 70px;
+    border: 3px solid transparent;
+    font-family: var(--stack-primary-font);
+    font-size: 20px;
+    opacity: 0.5;
+}
+.stack-form--text-area:hover{
+    opacity: 0.75;
+}
+.stack-form--text-area:focus{
     opacity: 1.0;
 }
 .stack-form--checkbox{
@@ -265,7 +297,27 @@ form{
 }
 .stack-form--select:hover{
     opacity: 0.75;
+    cursor: pointer;
 }
 .stack-form--select:focus{
     opacity: 1.0;
+}
+.stack-form--char-count{
+    font-size: 15px;
+    color: var(--stack-primary-color);
+}
+.stack-form--submit{
+    margin: 0 0 5px 0;
+    padding: 10px;
+    width: 556px;
+    background-color: var(--stack-primary-color);
+    color: var(--stack-text-colour);
+    border: 3px solid var(--stack-primary-color);
+    font-family: var(--stack-primary-font);
+    font-size: 20px;
+}
+.stack-form--submit:hover{
+    background-color: var(--stack-primary-color-darkened);
+    border: 3px solid var(--stack-primary-color-darkened);
+    cursor: pointer;;
 }

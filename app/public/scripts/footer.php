@@ -12,7 +12,7 @@ $footer = <<<EOL
 
 <div class="stack-footer--copyright">
 
-    <p>openCCMSYS, created by Ben @ <a href="https://www.benfd.uk/">benfd.uk</a></p>
+    <p>openCCMSYS, created by <a href="https://www.benfd.uk/">benfd.uk</a></p>
 
 </div>
 
