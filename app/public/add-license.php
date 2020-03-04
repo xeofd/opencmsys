@@ -6,7 +6,7 @@ require('../private/required.php');
 open_write_connection();
 
 // Create the prepared statement and bind the parameters to it
-$statement = $dbt->prepare("INSERT INTO client_hardware (client_hardware_make,client_hardware_model,client_hardware_user,client_hardware_issue,client_hardware_initial_contact,client_hardware_recent_contact,client_hardware_collection_date,client_hardware_is_active,client_hardware_link)
+$statement = $dbt->prepare("INSERT INTO client_licenses (client_hardware_make,client_hardware_model,client_hardware_user,client_hardware_issue,client_hardware_initial_contact,client_hardware_recent_contact,client_hardware_collection_date,client_hardware_is_active,client_hardware_link)
  VALUES (:add_hardware_make,:add_hardware_model,:add_hardware_user,:add_hardware_issue,:add_hardware_initial_contact,:add_hardware_recent_contact,:add_hardware_collection,:add_hardware_set_active,:add_hardware_set_link)");
 $statement->bindParam(':add_hardware_make', $add_hardware_make);
 $statement->bindParam(':add_hardware_model', $add_hardware_model);
@@ -37,7 +37,7 @@ $statement = null;
 $dbt = null;  
 
 // Reload to page and kill the script
-header('Location: ../public/client-hardware.php');
+header('Location: ../public/client-license.php');
 die();
 
 ?>

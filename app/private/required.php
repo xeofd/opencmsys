@@ -15,7 +15,7 @@ function open_read_connection(){
 function open_write_connection(){
     global $dbt;
     $dbu = "occmsysrw";
-    $dbp = "x7EM7,tFMbCqY!";
+    $dbp = "x7EM7btFMbCqY!";
     $dbo = [
         PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
     ];

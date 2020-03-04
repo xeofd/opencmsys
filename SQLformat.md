@@ -34,9 +34,9 @@ CREATE TABLE client_hardware(
     client_hardware_user VARCHAR(64) NOT NULL,
     client_hardware_issue VARCHAR(2048) NOT NULL,
     client_hardware_initial_contact DATE NOT NULL,
-    client_hardware_recent_contacct DATE NOT NULL,
+    client_hardware_recent_contact DATE NOT NULL,
     client_hardware_collection_date DATE NOT NULL,
-    client_hardware_return_date DATE NOT NULL,
+    client_hardware_return_date DATE,
     client_hardware_is_active TINYINT NOT NULL,
     client_hardware_link VARCHAR(64) NOT NULL,
     client_id INT,
@@ -65,9 +65,12 @@ CREATE TABLE client_licenses(
 
 ```
 CREATE USER 'occmsysro'@'localhost'
-    IDENTIFIED BY '{ENTER PASSWORD}';
+    IDENTIFIED WITH mysql_native_password
+    BY '{ENTER PASSWORD}';
 CREATE USER 'occmsysrw'@'localhost'
     IDENTIFIED BY '{ENTER PASSWORD}';
+    IDENTIFIED WITH mysql_native_password
+    BY '{ENTER PASSWORD}';
 ```
 
 ```
