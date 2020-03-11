@@ -6,28 +6,20 @@ require('../private/required.php');
 open_write_connection();
 
 // Create the prepared statement and bind the parameters to it
-$statement = $dbt->prepare("INSERT INTO client_licenses (client_hardware_make,client_hardware_model,client_hardware_user,client_hardware_issue,client_hardware_initial_contact,client_hardware_recent_contact,client_hardware_collection_date,client_hardware_is_active,client_hardware_link)
- VALUES (:add_hardware_make,:add_hardware_model,:add_hardware_user,:add_hardware_issue,:add_hardware_initial_contact,:add_hardware_recent_contact,:add_hardware_collection,:add_hardware_set_active,:add_hardware_set_link)");
-$statement->bindParam(':add_hardware_make', $add_hardware_make);
-$statement->bindParam(':add_hardware_model', $add_hardware_model);
-$statement->bindParam(':add_hardware_user', $add_hardware_user);
-$statement->bindParam(':add_hardware_issue', $add_hardware_issue);
-$statement->bindParam(':add_hardware_initial_contact', $add_hardware_initial_contact);
-$statement->bindParam(':add_hardware_recent_contact', $add_hardware_recent_contact);
-$statement->bindParam(':add_hardware_collection', $add_hardware_collection);
-$statement->bindParam(':add_hardware_set_active', $add_hardware_set_active);
-$statement->bindParam(':add_hardware_set_link', $add_hardware_set_active);
+$statement = $dbt->prepare("INSERT INTO client_licenses (client_license_software,client_license_original_user,client_license_key,client_license_first_use,client_license_link)
+ VALUES (:client_license_software,:client_license_original_user,:client_license_key,:client_license_first_use,:client_license_link)");
+$statement->bindParam(':client_license_software', $client_license_software);
+$statement->bindParam(':client_license_original_user', $client_license_original_user);
+$statement->bindParam(':client_license_key', $client_license_key);
+$statement->bindParam(':client_license_first_use', $client_license_first_use);
+$statement->bindParam(':client_license_link', $client_license_link);
 
 // Pull the data from the form
-$add_hardware_make = $_POST['add_hardware_make'];
-$add_hardware_model = $_POST['add_hardware_model'];
-$add_hardware_user = $_POST['add_hardware_user'];
-$add_hardware_issue = $_POST['add_hardware_issue'];
-$add_hardware_initial_contact = date("Y-m-d", strtotime($_POST['add_hardware_initial_contact']));
-$add_hardware_recent_contact = date("Y-m-d", strtotime($_POST['add_hardware_initial_contact']));
-$add_hardware_collection = date("Y-m-d", strtotime($_POST['add_hardware_collection']));
-$add_hardware_set_active = 1;
-$add_hardware_set_link = "hardware_page.php";
+$client_license_software = $_POST['add_license_software'];
+$client_license_original_user = $_POST['add_license_original_user'];
+$client_license_key = $_POST['add_license_key'];
+$client_license_first_use = date("Y-m-d", strtotime($_POST['add_license_first_use']));
+$client_license_link = "license_page.php";
 
 // Execute the statement
 $statement->execute();
@@ -37,7 +29,7 @@ $statement = null;
 $dbt = null;  
 
 // Reload to page and kill the script
-header('Location: ../public/client-license.php');
+header('Location: /client-licenses.php');
 die();
 
 ?>

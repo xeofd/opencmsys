@@ -50,11 +50,63 @@
                                 </thead>
                                 <tbody>
                                     <tr class="stack-table--data-row">
-                                        <td class="stack-table--data" name="component_list_hardware">HP Probook</td>
-                                        <td class="stack-table--data" name="component_list_client">Glacier</td>
+                                        <td class="stack-table--data" name="component_list_hardware">HP Minitower</td>
+                                        <td class="stack-table--data" name="component_list_client">Example Inc</td>
                                         <td class="stack-table--data" name="component_list_user">Jane Doe</td>
-                                        <td class="stack-table--data" name="component_list_issue">Screen flashing on and off</td>
+                                        <td class="stack-table--data" name="component_list_issue">Hard Drive failed</td>
                                         <td class="stack-table--data" name="component_list_date">12/12/19</td>
+                                        <td class="stack-table--data" name="component_list_complete">
+                                            <form>
+                                                <input type="checkbox" class="stack-form--checkbox" checked>
+                                            </form>
+                                        </td>
+                                        <td class="stack-table--data" name="component_list_link"><a href="#" class="stack-table--link">More info</a></td>
+                                    </tr>
+                                    <tr class="stack-table--data-row">
+                                        <td class="stack-table--data" name="component_list_hardware">HP Probook</td>
+                                        <td class="stack-table--data" name="component_list_client">JDoe Inc.</td>
+                                        <td class="stack-table--data" name="component_list_user">John Doe</td>
+                                        <td class="stack-table--data" name="component_list_issue">Screen flashing on and off</td>
+                                        <td class="stack-table--data" name="component_list_date">10/12/19</td>
+                                        <td class="stack-table--data" name="component_list_complete">
+                                            <form>
+                                                <input type="checkbox" class="stack-form--checkbox" checked>
+                                            </form>
+                                        </td>
+                                        <td class="stack-table--data" name="component_list_link"><a href="#" class="stack-table--link">More info</a></td>
+                                    </tr>
+                                    <tr class="stack-table--data-row">
+                                        <td class="stack-table--data" name="component_list_hardware">HP Probook</td>
+                                        <td class="stack-table--data" name="component_list_client">John Doe Co.</td>
+                                        <td class="stack-table--data" name="component_list_user">Jane Doe</td>
+                                        <td class="stack-table--data" name="component_list_issue">Screen flashing</td>
+                                        <td class="stack-table--data" name="component_list_date">07/12/19</td>
+                                        <td class="stack-table--data" name="component_list_complete">
+                                            <form>
+                                                <input type="checkbox" class="stack-form--checkbox" checked>
+                                            </form>
+                                        </td>
+                                        <td class="stack-table--data" name="component_list_link"><a href="#" class="stack-table--link">More info</a></td>
+                                    </tr>
+                                    <tr class="stack-table--data-row">
+                                        <td class="stack-table--data" name="component_list_hardware">HP Probook</td>
+                                        <td class="stack-table--data" name="component_list_client">John Doe Co.</td>
+                                        <td class="stack-table--data" name="component_list_user">Jane Doe</td>
+                                        <td class="stack-table--data" name="component_list_issue">Keyboard not responding</td>
+                                        <td class="stack-table--data" name="component_list_date">03/12/19</td>
+                                        <td class="stack-table--data" name="component_list_complete">
+                                            <form>
+                                                <input type="checkbox" class="stack-form--checkbox" checked>
+                                            </form>
+                                        </td>
+                                        <td class="stack-table--data" name="component_list_link"><a href="#" class="stack-table--link">More info</a></td>
+                                    </tr>
+                                    <tr class="stack-table--data-row">
+                                        <td class="stack-table--data" name="component_list_hardware">HP Probook</td>
+                                        <td class="stack-table--data" name="component_list_client">John Doe Co.</td>
+                                        <td class="stack-table--data" name="component_list_user">John Doe</td>
+                                        <td class="stack-table--data" name="component_list_issue">Track pad un-responsive</td>
+                                        <td class="stack-table--data" name="component_list_date">03/12/19</td>
                                         <td class="stack-table--data" name="component_list_complete">
                                             <form>
                                                 <input type="checkbox" class="stack-form--checkbox" checked>

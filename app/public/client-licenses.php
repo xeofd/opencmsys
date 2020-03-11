@@ -75,7 +75,7 @@
 
                         <div class="stack-cell--max-width">
 
-                            <form action="/add-license.php" method="POST" name="form_add_hardware" class="stack-form">
+                            <form action="/add-license.php" method="POST" name="form_add_license" class="stack-form">
 
                                 <div class="stack-container--form">
 
@@ -113,7 +113,7 @@
                                 <div class="stack-container--form">
 
                                     <p>Initial Use</p>
-                                    <input type="date" name="add_license_initial_use" class="stack-form--text-input" placeholder="Hardware User" />   
+                                    <input type="date" name="add_license_first_use" class="stack-form--text-input" placeholder="Hardware User" />   
 
                                 </div>
 

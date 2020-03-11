@@ -47,20 +47,18 @@ CREATE TABLE client_hardware(
 ```
 
 ```
-CREATE TABLE client_licenses(
-    client_license_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    client_license_software VARCHAR(128) NOT NULL,
-    client_license_original_user VARCHAR(64) NOT NULL,
-    client_license_recent_user VARCHAR(64) NOT NULL,
-    client_license_key VARCHAR(512) NOT NULL,
-    client_license_first_use DATE NOT NULL,
-    client_license_recent_use DATE NOT NULL,
-    client_license_link VARCHAR(64) NOT NULL,
-    client_id INT,
-    CONSTRAINT license_fk
-    FOREIGN KEY (client_id)
-    REFERENCES clients(client_id)
-) ENGINE = INNODB;
+    CREATE TABLE client_licenses(
+        client_license_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+        client_license_software VARCHAR(128) NOT NULL,
+        client_license_original_user VARCHAR(64) NOT NULL,
+        client_license_key VARCHAR(512) NOT NULL,
+        client_license_first_use DATE NOT NULL,
+        client_license_link VARCHAR(64) NOT NULL,
+        client_id INT,
+        CONSTRAINT license_fk
+        FOREIGN KEY (client_id)
+        REFERENCES clients(client_id)
+    ) ENGINE = INNODB;
 ```
 
 ```
@@ -68,7 +66,6 @@ CREATE USER 'occmsysro'@'localhost'
     IDENTIFIED WITH mysql_native_password
     BY '{ENTER PASSWORD}';
 CREATE USER 'occmsysrw'@'localhost'
-    IDENTIFIED BY '{ENTER PASSWORD}';
     IDENTIFIED WITH mysql_native_password
     BY '{ENTER PASSWORD}';
 ```

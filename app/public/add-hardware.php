@@ -37,7 +37,7 @@ $statement = null;
 $dbt = null;  
 
 // Reload to page and kill the script
-header('Location: ../public/client-hardware.php');
+header('Location: /client-hardware.php');
 die();
 
 ?>
