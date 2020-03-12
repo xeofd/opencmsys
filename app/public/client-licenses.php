@@ -42,22 +42,16 @@
                                     <tr>
                                         <th class="stack-table--data-head">Software</th>
                                         <th class="stack-table--data-head">Client</th>
-                                        <th class="stack-table--data-head">OriginalUser</th>
-                                        <th class="stack-table--data-head">Recent User</th>
-                                        <th class="stack-table--data-head">First Use</th>
-                                        <th class="stack-table--data-head">Last Use</th>
+                                        <th class="stack-table--data-head">User</th>
+                                        <th class="stack-table--data-head">Used on</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="stack-table--data-row">
-                                        <td class="stack-table--data" name="license_list_software">Microsoft Office 2010</td>
-                                        <td class="stack-table--data" name="license_list_client">Glacier</td>
-                                        <td class="stack-table--data" name="license_list_user">Jane Doe</td>
-                                        <td class="stack-table--data" name="license_list_user">John Doe</td>
-                                        <td class="stack-table--data" name="license_list_issue">12/12/19</td>
-                                        <td class="stack-table--data" name="license_list_date">03/01/20</td>
-                                        <td class="stack-table--data" name="license_list_link"><a href="#" class="stack-table--link">More info</a></td>
-                                    </tr>
+                                    <?php 
+                                    
+                                    require("scripts/licenses_pull.php");
+
+                                    ?>
                                 </tbody>
                             </table>
 
@@ -87,7 +81,7 @@
                                 <div class="stack-container--form">
 
                                     <p>Original User</p>
-                                    <input type="text" name="add_license_original_user" class="stack-form--text-input" placeholder="Original user" />
+                                    <input type="text" name="add_license_user" class="stack-form--text-input" placeholder="Original user" />
 
                                 </div>
 
@@ -113,7 +107,7 @@
                                 <div class="stack-container--form">
 
                                     <p>Initial Use</p>
-                                    <input type="date" name="add_license_first_use" class="stack-form--text-input" placeholder="Hardware User" />   
+                                    <input type="date" name="add_license_use_date" class="stack-form--text-input" placeholder="Hardware User" />   
 
                                 </div>
 

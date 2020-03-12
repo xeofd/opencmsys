@@ -76,7 +76,25 @@
 
                         </div>
 
-                        <div class="stack-cell--content">
+                        <div class="stack-cell--content-table">
+
+                            <table class="stack-table">
+                                <thead>
+                                    <tr>
+                                        <th class="stack-table--data-head">Software</th>
+                                        <th class="stack-table--data-head">Client</th>
+                                        <th class="stack-table--data-head">User</th>
+                                        <th class="stack-table--data-head">Used on</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php 
+                                    
+                                    require("scripts/licenses_pull.php");
+
+                                    ?>
+                                </tbody>
+                            </table>
                             
                         </div>
 

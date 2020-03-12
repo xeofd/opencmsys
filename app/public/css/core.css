@@ -61,6 +61,17 @@ ul{
     overflow: hidden;
 }
 
+/* Error conditions */
+
+.stack-error--heads-up{
+    padding: 20px;
+    text-align: center;
+}
+.stack-error--no-data{
+    text-align: center;
+    margin: 0 auto;
+}
+
 /* Layout */
 
 .stack-container{

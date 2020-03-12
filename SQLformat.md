@@ -50,9 +50,9 @@ CREATE TABLE client_hardware(
     CREATE TABLE client_licenses(
         client_license_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
         client_license_software VARCHAR(128) NOT NULL,
-        client_license_original_user VARCHAR(64) NOT NULL,
+        client_license_user VARCHAR(64) NOT NULL,
         client_license_key VARCHAR(512) NOT NULL,
-        client_license_first_use DATE NOT NULL,
+        client_license_use_date DATE NOT NULL,
         client_license_link VARCHAR(64) NOT NULL,
         client_id INT,
         CONSTRAINT license_fk
