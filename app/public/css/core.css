@@ -4,7 +4,7 @@ Core CSS for stack-design. Required for the most basic functionality.
 
 About stack-design, https://www.benfd.uk/projects/stack-design
 
-To learn how to use stack-design goto https://www.benfd.uk/learn/stack-design
+To learn how to use stack-design goto https://learn.benfd.uk/stack-design
 
 */
 
@@ -21,7 +21,7 @@ To learn how to use stack-design goto https://www.benfd.uk/learn/stack-design
     --stack-background-color: rgb(59, 59, 59);
     /* Typography variables */
     --stack-primary-font: 'Lato', sans-serif;
-    --stack-secondary-font: 'Source Code Pro', monospace;
+    --stack-secondary-font: 'Inter', sans-serif;
     /* Styling variables */
     --stack-box-shadow: 0px 5px 15px var(--stack-shadowed-color);
 }

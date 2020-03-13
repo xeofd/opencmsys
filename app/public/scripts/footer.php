@@ -6,13 +6,13 @@ $footer = <<<EOL
 
 <div class="stack-footer--quick-links">
 
-    <p><a href="/">Home</a> | <a href="https://github.com/xeofd/openccmsys">GitHub</a> | <a href="https://www.benfd.uk/projects/openccmsys">About openCCMSYS</a></p>
+    <p><a href="/">Home</a> | <a href="https://github.com/xeofd/openccmsys" target="_blank">GitHub</a> | <a href="https://www.benfd.uk/projects/openccmsys" target="_blank">About openCCMSYS</a></p>
 
 </div>
 
 <div class="stack-footer--copyright">
 
-    <p>openCCMSYS, created by <a href="https://www.benfd.uk/">benfd.uk</a></p>
+    <p>openCCMSYS, created by <a href="https://www.benfd.uk/" target="_blank">benfd.uk</a></p>
 
 </div>
 

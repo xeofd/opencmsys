@@ -32,5 +32,7 @@ try{
     $dbt = null;
 
 } catch (PDOException $error){
-    die("<div class=\"stack-error--heads-up\"><h1>Cannot collect data from database: ".$pe->getMessage()."</h1>");
+    die("<div class=\"stack-error--heads-up\"><h1>Cannot collect data from database: ".$error->getMessage()."</h1>");
 }
+
+?>
