@@ -43,7 +43,7 @@ try{
         }
     }
     if (!$found){
-        echo("<div class=\"stack-error--no-data\"><h2>There are no license keys to display</h2></div>");
+        echo("<div class=\"stack-error--no-data\"><h2>There are no components to display</h2></div>");
     }
 
     //Null the PDO and close the connection

@@ -49,11 +49,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php
-
+                                    <?php 
                                     $homepage = false;
-                                    require('scripts/hardware_pull.php');
-
+                                    require('scripts/hardware_pull.php'); 
                                     ?>
                                 </tbody>
                             </table>
@@ -107,9 +105,7 @@
                                     <p>Client</p>
                                     <select class="stack-form--select">
                                         <option id="option_list_null">Chose an client</option>
-                                        <option name="add_hardware_company">Glacier Energy Services</option>
-                                        <option name="add_hardware_company">Palmers Scafolding</option>
-                                        <option name="add_hardware_company">The Normandy Hotel</option>
+                                        <?php require('scripts/client_pull.php'); ?>
                                     </select> 
 
                                 </div>
