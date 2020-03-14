@@ -51,22 +51,10 @@
                                 <tbody>
                                     <?php
 
-                                    require('/scripts/hardware_pull.php');
+                                    $homepage = false;
+                                    require('scripts/hardware_pull.php');
 
                                     ?>
-                                    <tr class="stack-table--data-row">
-                                        <td class="stack-table--data" name="component_list_hardware">HP Probook</td>
-                                        <td class="stack-table--data" name="component_list_client">John Doe Co.</td>
-                                        <td class="stack-table--data" name="component_list_user">John Doe</td>
-                                        <td class="stack-table--data" name="component_list_issue">Track pad un-responsive</td>
-                                        <td class="stack-table--data" name="component_list_date">03/12/19</td>
-                                        <td class="stack-table--data" name="component_list_complete">
-                                            <form>
-                                                <input type="checkbox" class="stack-form--checkbox" checked>
-                                            </form>
-                                        </td>
-                                        <td class="stack-table--data" name="component_list_link"><a href="#" class="stack-table--link">More info</a></td>
-                                    </tr>
                                 </tbody>
                             </table>
 

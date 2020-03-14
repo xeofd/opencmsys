@@ -14,16 +14,33 @@ try{
     $pull->setFetchMode(PDO::FETCH_ASSOC);
 
     //Pull in and display data
-    while($display = $pull->fetch()){
-        echo("<tr class=\"stack-table--data-row\">
-        <td class=\"stack-table--data\" name=\"component_list_hardware\">".$display['client_hardware_model']."</td>".
-        "<td class=\"stack-table--data\" name=\"component_list_client\">Company</td>".
-        "<td class=\"stack-table--data\" name=\"component_list_user\">".$display['client_hardware_user']."</td>".
-        "<td class=\"stack-table--data\" name=\"component_list_issue\">".$display['client_hardware_issue']."</td>".
-        "<td class=\"stack-table--data\" name=\"component_list_date\">".$display['client_hardware_recent_contact']."/td>".
-        "<td class=\"stack-table--data\" name=\"component_list_complete\">"."</td>".
-        "<td class=\"stack-table--data\" name=\"component_list_link\"><a href=\"#\" class=\"".$display['client_hardware_link']."\" class=\"stack-table--link\">More info</a></td></tr>");
-        $found = true;
+    if($homepage == true){
+        while($display = $pull->fetch()){
+            echo("<tr class=\"stack-table--data-row\">
+            <td class=\"stack-table--data\" name=\"component_list_hardware\">".$display['client_hardware_model']."</td>".
+            "<td class=\"stack-table--data\" name=\"component_list_client\">Company</td>".
+            "<td class=\"stack-table--data\" name=\"component_list_user\">".$display['client_hardware_user']."</td>".
+            "<td class=\"stack-table--data\" id=\"stack-table--hardware-issue\" name=\"component_list_issue\">".$display['client_hardware_issue']."</td>".
+            "<td class=\"stack-table--data\" name=\"component_list_link\"><a href=\"#\" class=\"".$display['client_hardware_link']."\" class=\"stack-table--link\">More info</a></td></tr>");
+            $found = true;
+        }
+    } else{
+        while($display = $pull->fetch()){
+            if($display['client_hardware_is_active'] == 1){
+                $is_active_result = "<form><input type=\"checkbox\" class=\"stack-form--checkbox\" /></form>";
+            }else{
+                $is_active_result = "<form><input type=\"checkbox\" class=\"stack-form--checkbox\" checked /></form>";
+            }
+            echo("<tr class=\"stack-table--data-row\">
+            <td class=\"stack-table--data\" name=\"component_list_hardware\">".$display['client_hardware_model']."</td>".
+            "<td class=\"stack-table--data\" name=\"component_list_client\">Company</td>".
+            "<td class=\"stack-table--data\" name=\"component_list_user\">".$display['client_hardware_user']."</td>".
+            "<td class=\"stack-table--data\" id=\"stack-table--hardware-issue\" name=\"component_list_issue\">".$display['client_hardware_issue']."</td>".
+            "<td class=\"stack-table--data\" name=\"component_list_date\">".$display['client_hardware_recent_contact']."</td>".
+            "<td class=\"stack-table--data\" name=\"component_list_complete\">".$is_active_result."</td>".
+            "<td class=\"stack-table--data\" name=\"component_list_link\"><a href=\"#\" class=\"".$display['client_hardware_link']."\" class=\"stack-table--link\">More info</a></td></tr>");
+            $found = true;
+        }
     }
     if (!$found){
         echo("<div class=\"stack-error--no-data\"><h2>There are no license keys to display</h2></div>");
@@ -34,7 +51,7 @@ try{
     $dbt = null;
 
 } catch (PDOException $error){
-    die("<div class=\"stack-error--heads-up\"><h3>Cannot collect data from database: </h3><p>".$error->getMessage()."</p>");
+    die("<div class=\"stack-error--no-data\"><h3>Cannot collect data from database: </h3><p>".$error->getMessage()."</p>");
 }
 
 ?>

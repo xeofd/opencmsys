@@ -47,20 +47,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="stack-table--data-row">
-                                        <td class="stack-table--data" name="component_list_hardware">HP Probook</td>
-                                        <td class="stack-table--data" name="component_list_client">Glacier</td>
-                                        <td class="stack-table--data" name="component_list_user">Jane Doe</td>
-                                        <td class="stack-table--data" name="component_list_issue">Screen flashing on and off</td>
-                                        <td class="stack-table--data" name="component_list_link"><a href="#" class="stack-table--link">More info</a></td>
-                                    </tr>
-                                    <tr class="stack-table--data-row">
-                                        <td class="stack-table--data">HP Probook</td>
-                                        <td class="stack-table--data">Glacier</td>
-                                        <td class="stack-table--data">Jane Doe</td>
-                                        <td class="stack-table--data">Screen flashing on and off</td>
-                                        <td class="stack-table--data"><a href="#" class="stack-table--link">More info</a></td>
-                                    </tr>
+                                    <?php 
+
+                                        $homepage = true;
+                                        require("scripts/hardware_pull.php");
+                                    
+                                    ?>
                                 </tbody>
                             </table>
 

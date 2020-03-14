@@ -21,7 +21,7 @@ To learn how to use stack-design goto https://learn.benfd.uk/stack-design
     --stack-background-color: rgb(59, 59, 59);
     /* Typography variables */
     --stack-primary-font: 'Lato', sans-serif;
-    --stack-secondary-font: 'Inter', sans-serif;
+    --stack-secondary-font: 'Roboto Mono', monospace;;
     /* Styling variables */
     --stack-box-shadow: 0px 5px 15px var(--stack-shadowed-color);
 }
@@ -239,7 +239,10 @@ ul{
     cursor: pointer;
     border-top: 1px solid var(--stack-primary-color);
 }
-
+#stack-table--hardware-issue{
+    max-width: 150px;
+    overflow: hidden;
+}
 /* User Interface items */
 
 /* Form elements */
