@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-
-    <?php require('scripts/tags.php'); ?>
-    
-    </head>
-
-    <body>
-
-        <!-- Begin stack-design layout -->
-
-        <div class="stack-full-container">
-
-            <?php
-            
-            require('scripts/header.php');
-
-            ?>
+<?php require('../scripts/header.php'); ?>
 
             <!-- Begin body content -->
 
@@ -51,7 +32,7 @@
                                 <tbody>
                                     <?php 
                                     $homepage = false;
-                                    require('scripts/hardware_pull.php'); 
+                                    require('../scripts/hardware_pull.php'); 
                                     ?>
                                 </tbody>
                             </table>
@@ -105,7 +86,7 @@
                                     <p>Client</p>
                                     <select class="stack-form--select">
                                         <option id="option_list_null">Chose an client</option>
-                                        <?php require('scripts/client_pull.php'); ?>
+                                        <?php require('../scripts/client_pull.php'); ?>
                                     </select> 
 
                                 </div>
@@ -142,14 +123,4 @@
 
             </div>
 
-            <?php 
-            
-                require('scripts/footer.php');
-
-            ?>
-
-        </div>
-
-    </body>
-
-</html>
+<?php require('../scripts/footer.php'); ?>

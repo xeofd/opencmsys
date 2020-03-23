@@ -89,6 +89,10 @@ ul{
     margin: 20px auto;
     width: 1450px;
 }
+.stack-container--flex{
+    display: flex;
+    margin: 10px;
+}
 
 /* Layout > Header */
 
@@ -181,6 +185,19 @@ ul{
 }
 .stack-cell--max-width{
     margin: 0;
+}
+.stack-cell--blank{
+    background: none;
+    box-shadow: none;
+}
+.stack-cell--404{
+    background: none;
+    color: var(--stack-primary-color);
+    font-size: 30px;
+}
+.stack-cell--404-text{
+    text-align: center;
+    font-size: 25px;
 }
 
 /* Layout > Visuals */
@@ -334,4 +351,42 @@ form{
     background-color: var(--stack-primary-color-darkened);
     border: 3px solid var(--stack-primary-color-darkened);
     cursor: pointer;;
+}
+
+/* Typography */
+
+.stack-text--error{
+    color: var(--stack-primary-color);
+}
+.stack-text--important{
+    font-weight: bold;
+    font-size: 22px;
+}
+.stack-text--small{
+    font-size: 12px;
+}
+.stack-text--large{
+    font-size: 30px;
+}
+.stack-text--xlarge{
+    font-size: 50px;
+}
+
+/* Information */
+
+.stack-information--block{
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+.stack-information--block:hover{
+    border-bottom: 3px solid var(--stack-primary-color);
+}
+.stack-information--block > p, .stack-information--long-form > p {
+    margin: 0;
+    padding: 0;
+}
+.stack-information--long-form{
+    padding: 10px;
+    text-align: right;
 }

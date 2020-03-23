@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-
-    <?php require('scripts/tags.php'); ?>
-
-    </head>
-
-    <body>
-
-        <!-- Begin stack-design layout -->
-
-        <div class="stack-full-container">
-
-        <?php
-        
-        require('scripts/header.php');
-
-        ?>
+<?php require('scripts/header.php'); ?>
 
             <!-- Begin body content -->
 
@@ -80,11 +61,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php 
-                                    
+                                <?php 
+
+                                    $homepage = true;
                                     require("scripts/licenses_pull.php");
 
-                                    ?>
+                                ?>
                                 </tbody>
                             </table>
                             
@@ -96,14 +78,4 @@
 
             </div>
 
-            <?php 
-            
-                require('scripts/footer.php');
-
-            ?>
-
-        </div>
-
-    </body>
-
-</html>
+<?php require('scripts/footer.php'); ?>

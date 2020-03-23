@@ -18,6 +18,12 @@ $footer = <<<EOL
 
 </footer>
 
+</div>
+
+</body>
+
+</html>
+
 EOL;
 
 echo($footer);

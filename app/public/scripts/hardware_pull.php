@@ -1,6 +1,11 @@
 <?php
 
-require_once('../private/required.php');
+if($homepage == true){
+    require_once('../private/required.php');
+}
+else{
+    require_once('../../private/required.php');
+}
 
 try{
     //Open the read only connection & set found false
@@ -21,7 +26,7 @@ try{
             "<td class=\"stack-table--data\" name=\"component_list_client\">Company</td>".
             "<td class=\"stack-table--data\" name=\"component_list_user\">".$display['client_hardware_user']."</td>".
             "<td class=\"stack-table--data\" id=\"stack-table--hardware-issue\" name=\"component_list_issue\">".$display['client_hardware_issue']."</td>".
-            "<td class=\"stack-table--data\" name=\"component_list_link\"><a href=\"#\" class=\"".$display['client_hardware_link']."\" class=\"stack-table--link\">More info</a></td></tr>");
+            "<td class=\"stack-table--data\" name=\"component_list_link\"><a href=\"hardware/".$display['client_hardware_link']."\" class=\"stack-table--link\">More info</a></td></tr>");
             $found = true;
         }
     } else{
@@ -38,7 +43,7 @@ try{
             "<td class=\"stack-table--data\" id=\"stack-table--hardware-issue\" name=\"component_list_issue\">".$display['client_hardware_issue']."</td>".
             "<td class=\"stack-table--data\" name=\"component_list_date\">".$display['client_hardware_recent_contact']."</td>".
             "<td class=\"stack-table--data\" name=\"component_list_complete\">".$is_active_result."</td>".
-            "<td class=\"stack-table--data\" name=\"component_list_link\"><a href=\"#\" class=\"".$display['client_hardware_link']."\" class=\"stack-table--link\">More info</a></td></tr>");
+            "<td class=\"stack-table--data\" name=\"component_list_link\"><a href=\"".$display['client_hardware_link']."\" class=\"stack-table--link\">More info</a></td></tr>");
             $found = true;
         }
     }

@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-
-    <?php require('scripts/tags.php'); ?>
-    
-    </head>
-
-    <body>
-
-        <!-- Begin stack-design layout -->
-
-        <div class="stack-full-container">
-
-        <?php
-        
-        require('scripts/header.php');
-
-        ?>
+<?php require('../scripts/header.php'); ?>
 
             <!-- Begin body content -->
 
@@ -47,7 +28,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php require("scripts/licenses_pull.php"); ?>
+                                    <?php $homepage = false; require("../scripts/licenses_pull.php"); ?>
                                 </tbody>
                             </table>
 
@@ -65,7 +46,7 @@
 
                         <div class="stack-cell--max-width">
 
-                            <form action="/add-license.php" method="POST" name="form_add_license" class="stack-form">
+                            <form action="add-license.php" method="POST" name="form_add_license" class="stack-form">
 
                                 <div class="stack-container--form">
 
@@ -93,7 +74,7 @@
                                     <p>Client</p>
                                     <select class="stack-form--select">
                                         <option id="option_list_null">Chose an client</option>
-                                        <?php require('scripts/client_pull.php'); ?>
+                                        <?php require('../scripts/client_pull.php'); ?>
                                     </select> 
 
                                 </div>
@@ -121,14 +102,4 @@
 
             </div>
 
-            <?php 
-            
-                require('scripts/footer.php');
-
-            ?>
-
-        </div>
-
-    </body>
-
-</html>
+<?php require('../scripts/footer.php'); ?>

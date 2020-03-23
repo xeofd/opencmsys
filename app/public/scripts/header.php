@@ -1,39 +1,60 @@
 <?php 
 
 $header = <<<EOL
-<!-- Begin header content -->
+<!DOCTYPE html>
+<html>
 
-<header class="stack-container-head stack-background--secondary stack-font--primary" id="stack_container_head">
+    <head>
+
+        <!-- Meta tags -->
+        <title>openCCMSYS</title>
+        <!-- Links -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Mono:400,700&display=swap" rel="stylesheet">
+        <link href="../css/core.css" rel="stylesheet" type="text/css" />
+        <!-- Scripts -->
+        <script src="scripts/core.js"></script>
     
-    <div class="stack-container">
+    </head>
 
-        <h1 class="stack-title">openCCMSYS</h1>
+    <body>
 
-        <div class="stack-spacer-horizontal"></div>
+        <!-- Begin stack-design layout -->
 
-        <nav class="stack-head-nav">
+        <div class="stack-full-container">
 
-            <ul>
+            <!-- Begin header content -->
 
-                <a href="index.php"><li class="stack-head-nav stack-nav-block">
-                    <p>Home</p>
-                </li></a>
+            <header class="stack-container-head stack-background--secondary stack-font--primary" id="stack_container_head">
+                
+                <div class="stack-container">
 
-                <a href="client-hardware.php"><li class="stack-head-nav stack-nav-block">
-                    <p>Client components</p>
-                </li></a>
+                    <h1 class="stack-title">openCCMSYS</h1>
 
-                <a href="client-licenses.php"><li class="stack-head-nav stack-nav-block">
-                    <p>Client Licenses</p>
-                </li></a>
+                    <div class="stack-spacer-horizontal"></div>
 
-            </ul>
+                    <nav class="stack-head-nav">
 
-        </nav>
+                        <ul>
 
-    </div>
+                            <a href="/"><li class="stack-head-nav stack-nav-block">
+                                <p>Home</p>
+                            </li></a>
 
-</header>
+                            <a href="/hardware"><li class="stack-head-nav stack-nav-block">
+                                <p>Client components</p>
+                            </li></a>
+
+                            <a href="/licenses"><li class="stack-head-nav stack-nav-block">
+                                <p>Client Licenses</p>
+                            </li></a>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+            </header>
 
 EOL;
 
