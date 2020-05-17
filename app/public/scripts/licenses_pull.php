@@ -40,7 +40,7 @@ try{
         }
     }
     if (!$found){
-        echo("<div class=\"stack-error--no-data\"><h2>There are no license keys to display</h2></div>");
+        echo("</tbody><div class=\"stack-error--no-data\"><h2>There are no license keys to display</h2></div>");
     }
 
     #Null the PDO and close the connection
@@ -48,7 +48,7 @@ try{
     $dbt = null;
 
 } catch (PDOException $error){
-    die("<div class=\"stack-error--no-data\"><h1>Cannot collect data from database: ".$error->getMessage()."</h1>");
+    die("<div class=\"stack-error--no-data\"><p>Cannot collect data from database: ".$error->getMessage()."</p>");
 }
 
 ?>

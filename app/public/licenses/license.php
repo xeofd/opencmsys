@@ -1,4 +1,8 @@
 <?php 
+
+$license_page = <<<EOL
+
+<?php
 require('../scripts/header.php'); 
 require('../scripts/license_select.php');
 ?>
@@ -15,7 +19,7 @@ require('../scripts/license_select.php');
                         
                         <div class="stack-cell--title">
 
-                            <h2>License info for <?php pull_data($license_link_code); echo($display['client_license_software']) ?></h2>
+                            <h2>License info for <?php pull_data(${license_link_code}); echo(${display['client_license_software']}) ?></h2>
 
                         </div>
 
@@ -86,3 +90,6 @@ require('../scripts/license_select.php');
             </div>
 
 <?php require('../scripts/footer.php'); ?>
+EOL
+
+?>

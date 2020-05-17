@@ -5,18 +5,19 @@ There are three tables in the database, **clients**, **client_hardware** and **c
 
 ---
 
-#### Table relationships ###
+## Table relationships ##
+
 The **clients** table has a *one* to *many* relationship with both **client_hardware** and **client_licenses** individually, as one client can have many peices of hardware and one client can have many software licenses.
 
 ---
 
 ## SQL Code to enter into CLI ##
 
-```
+```SQL
 CREATE DATABASE openccmsys;
 ```
 
-```
+```SQL
 CREATE TABLE clients(
     client_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     client_company_name VARCHAR(128) NOT NULL,
@@ -26,7 +27,7 @@ CREATE TABLE clients(
 ) ENGINE = INNODB;
 ```
 
-```
+```SQL
 CREATE TABLE client_hardware(
     client_hardware_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     client_hardware_make VARCHAR(128) NOT NULL,
@@ -46,7 +47,7 @@ CREATE TABLE client_hardware(
 ) ENGINE = INNODB;
 ```
 
-```
+```SQL
 CREATE TABLE client_licenses(
     client_license_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     client_license_software VARCHAR(128) NOT NULL,
@@ -61,7 +62,7 @@ CREATE TABLE client_licenses(
 ) ENGINE = INNODB;
 ```
 
-```
+```SQL
 CREATE USER 'occmsysro'@'localhost'
     IDENTIFIED WITH mysql_native_password
     BY '{ENTER PASSWORD}';
@@ -70,7 +71,7 @@ CREATE USER 'occmsysrw'@'localhost'
     BY '{ENTER PASSWORD}';
 ```
 
-```
+```SQL
 GRANT SELECT,INSERT,UPDATE,DELETE,CREATE
     ON openccmsys.*
     TO 'occmsysrw'@'localhost';

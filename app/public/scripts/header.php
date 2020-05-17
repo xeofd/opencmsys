@@ -24,33 +24,39 @@ $header = <<<EOL
 
             <!-- Begin header content -->
 
-            <header class="stack-container-head stack-background--secondary stack-font--primary" id="stack_container_head">
+            <header class="stack-background--secondary stack-font--primary" id="stack_container_head">
                 
                 <div class="stack-container">
 
-                    <h1 class="stack-title">openCCMSYS</h1>
+                    <div>
 
-                    <div class="stack-spacer-horizontal"></div>
+                        <h1 class="stack-title">openCCMSYS</h1>
 
-                    <nav class="stack-head-nav">
+                    </div>
 
-                        <ul>
+                    <div>
 
-                            <a href="/"><li class="stack-head-nav stack-nav-block">
+                        <nav class="stack-flex">
+
+                            <a class="stack-nav-link" href="/"><div class="stack-nav-block">
                                 <p>Home</p>
-                            </li></a>
+                            </div></a>
 
-                            <a href="/hardware"><li class="stack-head-nav stack-nav-block">
+                            <a class="stack-nav-link" href="/hardware"><div class="stack-nav-block">
                                 <p>Client components</p>
-                            </li></a>
+                            </div></a>
 
-                            <a href="/licenses"><li class="stack-head-nav stack-nav-block">
+                            <a class="stack-nav-link" href="/licenses"><div class="stack-nav-block">
                                 <p>Client Licenses</p>
-                            </li></a>
+                            </div></a>
 
-                        </ul>
+                            <a class="stack-nav-link" href="/settings"><div class="stack-nav-block">
+                                <p>Settings</p>
+                            </div></a>
 
-                    </nav>
+                        </nav>
+
+                    </div>
 
                 </div>
 

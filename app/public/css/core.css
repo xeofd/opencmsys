@@ -1,10 +1,6 @@
 /* 
 
-Core CSS for stack-design. Required for the most basic functionality.
-
-About stack-design, https://www.benfd.uk/projects/stack-design
-
-To learn how to use stack-design goto https://learn.benfd.uk/stack-design
+Core CSS for openCMSYS
 
 */
 
@@ -93,37 +89,29 @@ ul{
     display: flex;
     margin: 10px;
 }
+.stack-flex{
+    display: flex;
+}
 
 /* Layout > Header */
 
-.stack-container-head > div > .stack-spacer-horizontal{
-    width: 47%;
+header{
+    margin: 0 0 20px 0;
 }
-.stack-container-head > div > h1{
-    margin: 4px 0 0 0;
+header > div > div{
+    width: 50%;
 }
 
 /* Layout > Navigation */
 
-
-.stack-head-nav{
-    overflow: hidden;
+.stack-nav-block{
+    width: 180px;
+    text-align: center;
 }
-.stack-head-nav > ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.stack-head-nav > ul > a > li{
-    margin: 0 10px;
-    padding: 0 20px;
-    float: left;
-    color: var(--stack-primary-color);
-    border-bottom: 3px solid transparent;
-}
-.stack-head-nav > ul > a > li:hover{
-    border-bottom: 3px solid var(--stack-primary-color);
-    box-shadow: var(--stack-box-shadow);
+.stack-nav-link:hover{
+    background: var(--stack-primary-color);
+    color: var(--stack-text-colour);
+    border: none;
 }
 
 /* Layout > Grid */
