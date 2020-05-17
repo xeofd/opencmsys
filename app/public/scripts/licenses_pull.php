@@ -25,7 +25,7 @@ try{
             "<td class=\"stack-table--data\" name=\"license_list_client\">Company</td>".
             "<td class=\"stack-table--data\" name=\"license_list_user\">".$display['client_license_user']."</td>".
             "<td class=\"stack-table--data\" name=\"license_list_use_date\">".$display['client_license_use_date'])."</td>".
-            "<td class=\"stack-table--data\" name=\"license_list_link\"><a href=\"licenses/".$display['client_license_link']."\" class=\"stack-table--link\">More info</a></td></tr>";
+            "<td class=\"stack-table--data\" name=\"license_list_link\"><a href=\"licenses/license.php?i=".$display['client_license_link']."\" class=\"stack-table--link\">More info</a></td></tr>";
             $found = true;
         }
     }else{
@@ -35,7 +35,7 @@ try{
             "<td class=\"stack-table--data\" name=\"license_list_client\">Company</td>".
             "<td class=\"stack-table--data\" name=\"license_list_user\">".$display['client_license_user']."</td>".
             "<td class=\"stack-table--data\" name=\"license_list_use_date\">".$display['client_license_use_date'])."</td>".
-            "<td class=\"stack-table--data\" name=\"license_list_link\"><a href=\"".$display['client_license_link']."\" class=\"stack-table--link\">More info</a></td></tr>";
+            "<td class=\"stack-table--data\" name=\"license_list_link\"><a href=\"license.php?i=".$display['client_license_link']."\" class=\"stack-table--link\">More info</a></td></tr>";
             $found = true;
         }
     }

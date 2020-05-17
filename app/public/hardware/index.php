@@ -51,7 +51,7 @@
 
                         <div class="stack-cell--max-width">
 
-                            <form action="add-hardware.php" method="POST" name="form_add_hardware" class="stack-form">
+                            <form action="add.php" method="POST" name="form_add_hardware" class="stack-form">
 
                                 <div class="stack-container--form">
 

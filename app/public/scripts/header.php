@@ -28,13 +28,13 @@ $header = <<<EOL
                 
                 <div class="stack-container">
 
-                    <div>
+                    <div class="stack-cell--5">
 
                         <h1 class="stack-title">openCCMSYS</h1>
 
                     </div>
 
-                    <div>
+                    <div class="stack-cell--5">
 
                         <nav class="stack-flex">
 
@@ -48,10 +48,6 @@ $header = <<<EOL
 
                             <a class="stack-nav-link" href="/licenses"><div class="stack-nav-block">
                                 <p>Client Licenses</p>
-                            </div></a>
-
-                            <a class="stack-nav-link" href="/settings"><div class="stack-nav-block">
-                                <p>Settings</p>
                             </div></a>
 
                         </nav>

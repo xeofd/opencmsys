@@ -46,7 +46,7 @@
 
                         <div class="stack-cell--max-width">
 
-                            <form action="add-license.php" method="POST" name="form_add_license" class="stack-form">
+                            <form action="add.php" method="POST" name="form_add_license" class="stack-form">
 
                                 <div class="stack-container--form">
 

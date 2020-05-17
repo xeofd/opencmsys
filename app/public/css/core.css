@@ -360,15 +360,17 @@ form{
     font-size: 50px;
 }
 
+.stack-text--active{
+    color: rgb(216, 148, 22);
+}
+.stack-text--complete{
+    color: rgb(41, 194, 36);
+}
+
 /* Information */
 
 .stack-information--block{
     padding: 10px;
-    border-bottom: 3px solid transparent;
-    cursor: pointer;
-}
-.stack-information--block:hover{
-    border-bottom: 3px solid var(--stack-primary-color);
 }
 .stack-information--block > p, .stack-information--long-form > p {
     margin: 0;
