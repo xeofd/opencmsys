@@ -50,6 +50,10 @@ $header = <<<EOL
                                 <p>Client Licenses</p>
                             </div></a>
 
+                            <a class="stack-nav-link" href="/settings"><div class="stack-nav-block">
+                                <p>Settings</p>
+                            </div></a>
+
                         </nav>
 
                     </div>

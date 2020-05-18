@@ -74,12 +74,12 @@ if($link_code == null){
 
                         <div class="stack-cell--max-width">
 
-                            <form action="edit.php" method="POST" name="form_add_license" class="stack-form">
+                            <form action="edit.php?i=<?php echo($link_code) ?>" method="POST" name="form_add_license" class="stack-form">
 
                                 <div class="stack-container--form">
 
                                     <p>Last used</p>
-                                    <input type="date" name="add_license_use_date" class="stack-form--text-input" placeholder="Hardware User" />   
+                                    <input type="date" name="edit_license_use_date" class="stack-form--text-input" placeholder="Hardware User" />   
 
                                 </div>
 

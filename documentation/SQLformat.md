@@ -22,8 +22,8 @@ CREATE TABLE clients(
     client_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     client_company_name VARCHAR(128) NOT NULL,
     client_contact_number INT(11) NOT NULL,
-    client_component_total INT NOT NULL,
-    client_license_total INT NOT NULL
+    client_component_total INT,
+    client_license_total INT
 ) ENGINE = INNODB;
 ```
 

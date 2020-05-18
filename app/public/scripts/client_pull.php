@@ -13,7 +13,7 @@ try{
 
     //Pull in and display data
     while($display = $pull->fetch()){
-        echo("<option name=\"add_hardware_company\">Glacier Energy Services</option>");
+        echo("<option name=\"add_hardware_company\">".$display['client_company_name']."</option>");
         $found = true;
     }
     if (!$found){

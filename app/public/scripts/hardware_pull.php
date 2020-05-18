@@ -42,7 +42,6 @@ try{
             "<td class=\"stack-table--data\" name=\"component_list_user\">".$display['client_hardware_user']."</td>".
             "<td class=\"stack-table--data\" id=\"stack-table--hardware-issue\" name=\"component_list_issue\">".$display['client_hardware_issue']."</td>".
             "<td class=\"stack-table--data\" name=\"component_list_date\">".$display['client_hardware_recent_contact']."</td>".
-            "<td class=\"stack-table--data\" name=\"component_list_complete\">".$is_active_result."</td>".
             "<td class=\"stack-table--data\" name=\"component_list_link\"><a href=\"hardware.php?i=".$display['client_hardware_link']."\" class=\"stack-table--link\">More info</a></td></tr>");
             $found = true;
         }

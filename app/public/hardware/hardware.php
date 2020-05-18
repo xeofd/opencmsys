@@ -115,14 +115,7 @@ if($link_code == null){
 
                         <div class="stack-cell--max-width">
 
-                            <form action="edit.php" method="POST" class="stack-form">
-
-                                <div class="stack-container--form">
-
-                                    <p>Set ticket status</p>
-                                    <input type="checkbox" name="set_hardware_status" />
-
-                                </div>
+                            <form action="edit.php?i=<?php echo($link_code) ?>" method="POST" class="stack-form">
 
                                 <div class="stack-container--form">
 
