@@ -11,7 +11,18 @@ function pull_data($link_code){
         open_read_connection();
 
         #Prepare the SQL selection
-        $query = "SELECT client_license_software,client_license_user,client_license_use_date,client_license_key FROM client_licenses WHERE client_license_link = :link_code";
+        $query = "SELECT
+                `client_licenses`.`client_license_software`,
+                `client_licenses`.`client_license_user`,
+                `client_licenses`.`client_license_use_date`,
+                `client_licenses`.`client_license_key`,
+                `clients`.`client_company_name`
+            FROM `client_licenses`
+            JOIN `clients` ON
+                `clients`.`client_id` = `client_licenses`.`client_id`
+            WHERE
+                `client_licenses`.`client_license_link` = :link_code
+        ";
         $pull = $dbt->prepare($query);
         $pull->execute([':link_code'=>$link_code]);
         $pull->setFetchMode(PDO::FETCH_ASSOC);

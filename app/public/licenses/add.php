@@ -13,13 +13,14 @@ open_write_connection();
 create_link();
 
 #Create the prepared statement and bind the parameters to it
-$statement = $dbt->prepare("INSERT INTO client_licenses (client_license_software,client_license_user,client_license_key,client_license_use_date,client_license_link)
- VALUES (:client_license_software,:client_license_user,:client_license_key,:client_license_use_date,:client_license_link)");
+$statement = $dbt->prepare("INSERT INTO client_licenses (client_license_software,client_license_user,client_license_key,client_license_use_date,client_license_link,client_id)
+ VALUES (:client_license_software,:client_license_user,:client_license_key,:client_license_use_date,:client_license_link,:client_id)");
 $statement->bindParam(':client_license_software', $client_license_software);
 $statement->bindParam(':client_license_user', $client_license_user);
 $statement->bindParam(':client_license_key', $client_license_key);
 $statement->bindParam(':client_license_use_date', $client_license_use_date);
 $statement->bindParam(':client_license_link', $client_license_link);
+$statement->bindParam(':client_id', $add_client_id);
 
 #Pull the data from the form
 $client_license_software = $_POST['add_license_software'];
@@ -27,6 +28,7 @@ $client_license_user = $_POST['add_license_user'];
 $client_license_key = $_POST['add_license_key'];
 $client_license_use_date = date("Y-m-d", strtotime($_POST['add_license_use_date']));
 $client_license_link = $link_code;
+$add_client_id = $_POST['add_client_id'];
 
 #Execute the statement
 $statement->execute();

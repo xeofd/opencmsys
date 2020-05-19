@@ -65,7 +65,7 @@ if($link_code == null){
                                     </div>
 
                                     <div class="stack-information--block">
-                                        <p><span class="stack-text--important">Client: </span> </p>
+                                        <p><span class="stack-text--important">Client: </span><?php echo($display['client_company_name']);?></p>
                                     </div>
 
                                     <div class="stack-information--block">

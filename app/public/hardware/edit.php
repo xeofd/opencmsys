@@ -26,7 +26,7 @@ $statement = null;
 $dbt = null;  
 
 #Reload to page and kill the script
-header('Location: /hardware');
+header("Location: /hardware/hardware.php?i=$link_code");
 die();
 
 ?>

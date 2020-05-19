@@ -44,6 +44,8 @@ CREATE TABLE client_hardware(
     CONSTRAINT component_fk
     FOREIGN KEY (client_id)
     REFERENCES clients(client_id)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE
 ) ENGINE = INNODB;
 ```
 
@@ -59,6 +61,8 @@ CREATE TABLE client_licenses(
     CONSTRAINT license_fk
     FOREIGN KEY (client_id)
     REFERENCES clients(client_id)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE
 ) ENGINE = INNODB;
 ```
 

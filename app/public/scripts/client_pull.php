@@ -6,14 +6,14 @@ try{
     $found = false;
 
     //Prepare the SQL selection
-    $query = "SELECT client_company_name FROM clients";
+    $query = "SELECT client_id,client_company_name FROM clients";
     $pull = $dbt->prepare($query);
     $pull->execute();
     $pull->setFetchMode(PDO::FETCH_ASSOC);
 
     //Pull in and display data
     while($display = $pull->fetch()){
-        echo("<option name=\"add_hardware_company\">".$display['client_company_name']."</option>");
+        echo("<option value=".htmlspecialchars($display['client_id'], ENT_QUOTES).">".htmlspecialchars($display['client_company_name'])."</option>");
         $found = true;
     }
     if (!$found){
@@ -25,7 +25,7 @@ try{
     $dbt = null;
 
 } catch (PDOException $error){
-    die("<div class=\"stack-error--no-data\"><h1>Cannot collect data from database: ".$error->getMessage()."</h1>");
+    die("<div class=\"stack-error--no-data\"><p>Cannot collect data from database: ".$error->getMessage()."</p>");
 }
 
 ?>

@@ -84,8 +84,8 @@
                                 <div class="stack-container--form">
 
                                     <p>Client</p>
-                                    <select class="stack-form--select">
-                                        <option id="option_list_null">Chose an client</option>
+                                    <select class="stack-form--select" name="add_hardware_company">
+                                        <option id="option_list_null" selected>Chose an client</option>
                                         <?php require('../scripts/client_pull.php'); ?>
                                     </select> 
 
