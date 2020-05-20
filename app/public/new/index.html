@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Meta tags -->
+        <title>openCCMSYS</title>
+        <meta lang="en/gb" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Links -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="ui.css" rel="stylesheet" type="text/css" />
+        <link href="core.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Begin page content-->
+
+        <header id="header_outer">
+            
+            <div class="ocms-container ocms-container--large ocms-container--flex" id="header_inner">
+
+                <div class="ocms-cell--50pc">
+
+                    <h1 class="ocms-logo">openCCMSYS</h1>
+
+                </div>
+
+                <div class="ocms-cell--50pc">
+
+                    <!-- Site navigation -->
+
+                    <nav class="ocms-container--flex">
+
+                        <a href="/" class="ocms-nav--link"><div class="ocms-nav--block">
+                            <p>Home</p>
+                        </div></a>
+
+                        <a href="/hardware" class="ocms-nav--link"><div class="ocms-nav--block">
+                            <p>Hardware</p>
+                        </div></a>
+
+                        <a href="/licenses" class="ocms-nav--link"><div class="ocms-nav--block">
+                            <p>Licenses</p>
+                        </div></a>
+
+                        <a href="/clients" class="ocms-nav--link"><div class="ocms-nav--block">
+                            <p>Clients</p>
+                        </div></a>
+
+                        <a href="/settings" class="ocms-nav--link"><div class="ocms-nav--block">
+                            <p>Settings</p>
+                        </div></a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Begin body content -->
+
+        <main class="ocms-container ocms-container--large" id="main_outer">
+
+            <div class="ocms-container--flex" id="main_inner">
+
+                <div class="ocms-content--block ocms-cell-breaker ocms-cell--50pc">
+                
+                    <div class="ocms-content--title">
+    
+                        <h2>Client Hardware list</h2>
+    
+                    </div>
+    
+                    <div>
+    
+                        <table class="ocms-content--table">
+                            <thead>
+                                <tr>
+                                    <th class="stack-table--data-head">Hardware</th>
+                                    <th class="stack-table--data-head">Client</th>
+                                    <th class="stack-table--data-head">Issue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="stack-table--data-row">
+                                    <td class="stack-table--data" name="component_list_hardware">Component</td>
+                                    <td class="stack-table--data" name="component_list_client">Company</td>
+                                    <td class="stack-table--data" id="stack-table--hardware-issue" name="component_list_issue"></td>
+                                    <td class="stack-table--data" name="component_list_link"><a href="hardware/hardware.php?i=['client_hardware_link']." class="stack-table--link">More info</a></td></tr>
+                            </tbody>
+                        </table>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="ocms-content--block ocms-cell--50pc">
+    
+                    <div class="stack-cell--title">
+    
+                        <h2>Client software list</h2>
+    
+                    </div>
+    
+                    <div class="stack-cell--content-table">
+    
+                        <table class="stack-table">
+                            <thead>
+                                <tr>
+                                    <th class="stack-table--data-head">Software</th>
+                                    <th class="stack-table--data-head">Client</th>
+                                    <th class="stack-table--data-head">User</th>
+                                    <th class="stack-table--data-head">Used on</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </main>
+
+</html>
