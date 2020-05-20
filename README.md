@@ -4,10 +4,8 @@ Open Client Computer Management System (**openCCMSYS**). This is a web based com
 
 The system runs on a PHP and MySQL backend with a basic HTML, CSS and JavaScript front end. It is a non-complex system as it serves a very specific purpose and having little complexity helps keep focus and reduce bugs and the learning curve for the system.
 
-This GIT package also has a system for importing any data you may have, this is a simple Python program which recieves the location of your current data set, if you have some, and the current table headers to import them into the MySQL database.
-
 ## How to setup ##
 
-For help getting the system set up please see documentation/SETUP.md, this will give you some instructions on how to download the repo, set up the database and if needed, use DIEapp to import your current data.
+For help getting the system set up please see documentation/SETUP.md, this will give you some instructions on how to set up the database and ensure that the link to the database within the code is set up correctly.
 
 Alternativly you can visit <https://www.benfd.uk/projects/openccmsys/setup> to see a graphical version of setting up the system along with some videos.
