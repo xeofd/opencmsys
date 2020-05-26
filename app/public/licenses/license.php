@@ -1,59 +1,69 @@
 <?php
 require('../scripts/header.php'); 
-require('../scripts/license_select.php');
+require('../scripts/data_select.php');
 
 $link_code = $_GET['i'];
 
 if($link_code == null){
     header('Location: /licenses');
+}else{
+    license_select($link_code);
+
+    if ($display['download_link'] == null){
+        $download_link = "No download link";
+    }else{
+        $download_link = $display['download_link'];
+    }
 }
 ?>
 
             <!-- Begin body content -->
 
-            <div class="stack-spacer-vertical"></div>
+            <main class="ocms-container" id="ocms_container_content">
 
-            <div class="stack-container">
+                <div class="ocms-container--flex">
 
-                <main class="stack-container" id="stack_container_content">
-
-                    <div class="stack-cell stack-cell--6">
+                    <div class="ocms-content--block ocms-cell-breaker ocms-cell--70pc">
                         
-                        <div class="stack-cell--title">
+                        <div class="ocms-content--title">
 
-                            <h2>License info for <?php pull_data($link_code); echo($display['client_license_software']); ?></h2>
+                            <h2>License info for <?php echo($display['software']); ?></h2>
 
                         </div>
 
-                        <div class="stack-cell--max-width">
+                        <div class="ocms-cell--text">
 
-                            <div class="stack-container--flex">
+                            <div class="ocms-container--flex ocms-container--padded">
 
-                                <div class="stack-cell--5">
+                                <div class="ocms-cell--50pc">
                                 
-                                    <div class="stack-information--block">
-                                        <p><span class="stack-text--important">Software: </span><?php echo($display['client_license_software']) ?></p>
+                                    <div class="ocms-content--information">
+                                        <p>Software: <?php echo($display['software']) ?></p>
                                     </div>
 
-                                    <div class="stack-information--block">
-                                        <p><span class="stack-text--important">Client: </span><?php echo($display['client_company_name']);?></p>
+                                    <div class="ocms-content--information">
+                                        <p>Client: <?php echo($display['company_name']);?></p>
                                     </div>
 
-                                    <div class="stack-information--block">
-                                        <p><span class="stack-text--important">User: </span><?php echo($display['client_license_user']) ?></p>
+                                    <div class="ocms-content--information">
+                                        <p>User: <?php echo($display['user']) ?></p>
                                     </div>
 
-                                    <div class="stack-information--block">
-                                        <p><span class="stack-text--important">Last used on: </span><?php echo($display['client_license_use_date']) ?></p>
+                                    <div class="ocms-content--information">
+                                        <p>Last used on: <?php echo($display['use_date']) ?></p>
                                     </div>
 
                                 </div>
 
-                                <div class="stack-cell--5">
+                                <div class="ocms-cell--50pc">
                                 
-                                    <div class="stack-information--block">
-                                        <p><span class="stack-text--important">License key</span> </p>
-                                        <p><?php echo($display['client_license_key']) ?></p>
+                                    <div class="ocms-content--information">
+                                        <p>License key </p>
+                                        <p><?php echo($display['license_key']) ?></p>
+                                    </div>
+
+                                    <div class="ocms-content--information">
+                                        <p>Software download: <a href="<?php echo($download_link); ?>"><?php echo($download_link); ?></a></p>
                                     </div>
                                 
                                 </div>
@@ -64,28 +74,45 @@ if($link_code == null){
 
                     </div>
 
-                    <div class="stack-cell stack-cell--4">
+                    <div class="ocms-content--block ocms-cell ocms-cell--30pc">
 
-                        <div class="stack-cell--title">
+                        <div class="ocms-content--title">
 
                             <h2>Edit info</h2>
 
                         </div>
 
-                        <div class="stack-cell--max-width">
+                        <div class="ocms-cell--max-width">
 
-                            <form action="edit.php?i=<?php echo($link_code) ?>" method="POST" name="form_add_license" class="stack-form">
+                            <form action="edit.php?i=<?php echo($link_code) ?>" method="POST" name="form_add_license" class="ocms-form">
 
-                                <div class="stack-container--form">
+                                <div class="ocms-container--flex ocms-container--padded">
 
-                                    <p>Last used</p>
-                                    <input type="date" name="edit_license_use_date" class="stack-form--text-input" placeholder="Hardware User" />   
+                                    <div class="ocms-cell--25pc">
+                                        <p>Last used</p>
+                                    </div>
+
+                                    <div class="ocms-cell--80pc">
+                                        <input type="date" name="edit_use_date" class="ocms-form--text-input" />
+                                    </div>   
 
                                 </div>
 
-                                <div class="stack-container--form">
+                                <div class="ocms-container--flex ocms-container--padded">
 
-                                    <input type="submit" class="stack-form--submit" value="Update license" />   
+                                    <div class="ocms-cell--25pc">
+                                        <p>Add DL link</p>
+                                    </div>
+
+                                    <div class="ocms-cell--80pc">
+                                        <input type="text" name="edit_download_link" class="ocms-form--text-input" placeholder="Download link" />
+                                    </div>  
+
+                                </div>
+
+                                <div class="ocms-container--form">
+
+                                    <input type="submit" class="ocms-form--submit" value="Update license" />   
 
                                 </div>
 
@@ -95,8 +122,8 @@ if($link_code == null){
 
                     </div>
 
-                </main>
+                </div>
 
-            </div>
+            </main>
 
 <?php require('../scripts/footer.php'); ?>

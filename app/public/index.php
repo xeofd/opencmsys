@@ -1,81 +1,80 @@
-<?php require('scripts/header.php'); ?>
+<?php
 
-            <!-- Begin body content -->
+$homepage = true;
 
-            <div class="stack-spacer-vertical"></div>
+require('scripts/header.php');
+require('scripts/data_pull.php');
 
-            <div class="stack-container">
+?>
 
-                <main class="stack-container" id="stack_container_content">
+            <div class="ocms-container--status" id="status_container">
 
-                    <div class="stack-cell stack-cell--5">
-                        
-                        <div class="stack-cell--title">
+                <script src="../js/core.js"></script>
+            
+            </div>
 
-                            <h2>Client Hardware list</h2>
+            <div class="ocms-container--flex" id="main_inner">
 
-                        </div>
-
-                        <div class="stack-cell--content-table">
-
-                            <table class="stack-table">
-                                <thead>
-                                    <tr>
-                                        <th class="stack-table--data-head">Hardware</th>
-                                        <th class="stack-table--data-head">Client</th>
-                                        <th class="stack-table--data-head">User</th>
-                                        <th class="stack-table--data-head">Issue</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php 
-
-                                        $homepage = true;
-                                        require("scripts/hardware_pull.php");
-                                    
-                                    ?>
-                                </tbody>
-                            </table>
-
-                        </div>
-
+                <div class="ocms-content--block ocms-cell-breaker ocms-cell--50pc">
+                
+                    <div class="ocms-content--title">
+    
+                        <h2>Hardware list</h2>
+    
                     </div>
-
-                    <div class="stack-cell stack-cell--5">
-
-                        <div class="stack-cell--title">
-
-                            <h2>Client software list</h2>
-
-                        </div>
-
-                        <div class="stack-cell--content-table">
-
-                            <table class="stack-table">
-                                <thead>
-                                    <tr>
-                                        <th class="stack-table--data-head">Software</th>
-                                        <th class="stack-table--data-head">Client</th>
-                                        <th class="stack-table--data-head">User</th>
-                                        <th class="stack-table--data-head">Used on</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <?php 
-
-                                    $homepage = true;
-                                    require("scripts/licenses_pull.php");
-
-                                ?>
-                                </tbody>
-                            </table>
-                            
-                        </div>
-
+    
+                    <div>
+    
+                        <table class="ocms-content--table">
+                            <thead>
+                                <tr>
+                                    <th class="ocms-table--data-head">Hardware</th>
+                                    <th class="ocms-table--data-head">Client</th>
+                                    <th class="ocms-table--data-head">Issue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php hardware_pull(); ?>
+                            </tbody>
+                        </table>
+    
                     </div>
-
-                </main>
+    
+                </div>
+    
+                <div class="ocms-content--block ocms-cell--50pc">
+    
+                    <div class="ocms-content--title">
+    
+                        <h2>Software list</h2>
+    
+                    </div>
+    
+                    <div>
+    
+                        <table class="ocms-content--table">
+                            <thead>
+                                <tr>
+                                    <th class="ocms-table--data-head">Software</th>
+                                    <th class="ocms-table--data-head">Client</th>
+                                    <th class="ocms-table--data-head">User</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php license_pull(); ?>
+                            </tbody>
+                        </table>
+    
+                    </div>
+    
+                </div>
 
             </div>
 
-<?php require('scripts/footer.php'); ?>
+        </main>
+
+<?php 
+
+require('scripts/footer.php');
+
+?>

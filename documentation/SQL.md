@@ -21,7 +21,7 @@ CREATE DATABASE openccmsys;
 CREATE TABLE client(
     id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     company_name VARCHAR(128) NOT NULL,
-    contact_number INT(11) NOT NULL,
+    contact_number INT(13) NOT NULL,
     component_total INT,
     license_total INT
 ) ENGINE = INNODB;
@@ -56,6 +56,7 @@ CREATE TABLE client_license(
     user VARCHAR(64) NOT NULL,
     license_key VARCHAR(512) NOT NULL,
     use_date DATE NOT NULL,
+    download_link VARCHAR(128),
     link VARCHAR(64) NOT NULL,
     client_id INT,
     CONSTRAINT license_fk
