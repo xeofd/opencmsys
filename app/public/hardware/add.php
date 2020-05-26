@@ -4,16 +4,15 @@
 
 #Pull in dependants
 require('../../private/required.php');
-require('../../private/link_generator.php');
 
 #Open a database connection
 open_write_connection();
 
 #Generate the link for the assosiated page
-create_link();
+generate_link();
 
 #Create the prepared statement and bind the parameters to it
-$statement = $dbt->prepare("INSERT INTO client_hardware (client_hardware_make,client_hardware_model,client_hardware_user,client_hardware_issue,client_hardware_initial_contact,client_hardware_recent_contact,client_hardware_collection_date,client_hardware_is_active,client_hardware_link,client_id)
+$statement = $dbt->prepare("INSERT INTO client_hardware (make,model,user,issue,initial_contact,recent_contact,collection_date,job_status,link,client_id)
  VALUES (:add_hardware_make,:add_hardware_model,:add_hardware_user,:add_hardware_issue,:add_hardware_initial_contact,:add_hardware_recent_contact,:add_hardware_collection,:add_hardware_set_active,:add_hardware_set_link,:client_id)");
 $statement->bindParam(':add_hardware_make', $add_hardware_make);
 $statement->bindParam(':add_hardware_model', $add_hardware_model);

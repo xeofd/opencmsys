@@ -1,69 +1,84 @@
-<?php require('../scripts/header.php'); ?>
+<?php 
 
-            <!-- Begin body content -->
+require('../scripts/header.php');
 
-            <div class="stack-spacer-vertical"></div>
+?>
 
-            <div class="stack-container">
 
-                <main class="stack-container" id="stack_container_content">
+        <div class="ocms-container--status" id="status_container">
 
-                    <div class="stack-cell stack-cell--6">
-                        
-                        <div class="stack-cell--title">
+            <script src="../js/core.js"></script>
 
-                            <h2>openCCMSYS Settings</h2>
+        </div>
 
-                        </div>
+        <div class="ocms-container--flex" id="main_inner">
 
-                        <div class="stack-cell--max-width stack-information--block">
-                            
-                            <p>There currently are no settings to be configured, the main focus of this page is to add clients to the database.</p>
+            <div class="ocms-content--block ocms-cell-breaker ocms-cell--70pc">
+                
+                <div class="ocms-content--title">
 
-                        </div>
+                    <h2>openCCMSYS Settings</h2>
 
-                    </div>
+                </div>
 
-                    <div class="stack-cell stack-cell--4">
+                <div class="ocms-container--padded">
+                    
+                    <p>There currently are no settings to be configured, the main focus of this page is to add clients to the database.</p>
 
-                        <div class="stack-cell--title">
-
-                            <h2>Add a client</h2>
-
-                        </div>
-
-                        <div class="stack-cell--max-width">
-
-                            <form action="add-client.php" method="POST" name="form_add_hardware" class="stack-form">
-
-                                <div class="stack-container--form">
-
-                                    <p>Company name</p>
-                                    <input type="text" name="add_company_name" class="stack-form--text-input" placeholder="Company Name" />
-
-                                </div>
-
-                                <div class="stack-container--form">
-
-                                    <p>Contact number</p>
-                                    <input type="text" name="add_contact_number" class="stack-form--text-input" placeholder="Contact Number" />
-
-                                </div>
-
-                                <div class="stack-container--form">
-
-                                    <input type="submit" class="stack-form--submit" value="Add client" />   
-
-                                </div>
-
-                            </form>
-
-                        </div>
-
-                    </div>
-
-                </main>
+                </div>
 
             </div>
+
+            <div class="ocms-content--block ocms-cell--30pc">
+
+                <div class="ocms-content--title">
+
+                    <h2>Add a client</h2>
+
+                </div>
+
+                <div class="stack-cell--max-width">
+
+                    <form action="add-client.php" method="POST" name="form_add_hardware" class="ocms-form">
+
+                        <div class="ocms-container--flex">
+
+                            <div class="ocms-cell--25pc">
+                                <p>Company name</p>
+                            </div>
+
+                            <div class="ocms-cell--80pc ocms-container--padded">
+                                <input type="text" name="add_company_name" class="ocms-form--text-input" placeholder="Company Name" />
+                            </div>
+
+                        </div>
+
+                        <div class="ocms-container--flex">
+
+                            <div class="ocms-cell--25pc">
+                                <p>Contact number</p>
+                            </div>
+
+                            <div class="ocms-cell--80pc ocms-container--padded">
+                                <input type="text" name="add_contact_number" class="ocms-form--text-input" placeholder="Contact Number" />
+                            </div>
+
+                        </div>
+
+                        <div class="ocms-container--flex">
+
+                            <input type="submit" class="ocms-form--submit" value="Add client" />   
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
 
 <?php require('../scripts/footer.php'); ?>

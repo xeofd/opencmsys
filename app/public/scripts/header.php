@@ -4,63 +4,72 @@ $header = <<<EOL
 <!DOCTYPE html>
 <html>
 
+<!DOCTYPE html>
+<html>
+
     <head>
 
         <!-- Meta tags -->
         <title>openCCMSYS</title>
+        <meta lang="en/gb" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Links -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Mono:400,700&display=swap" rel="stylesheet">
-        <link href="../css/core.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href="/css/ui.css" rel="stylesheet" type="text/css" />
+        <link href="/css/core.css" rel="stylesheet" type="text/css" />
         <!-- Scripts -->
-        <script src="scripts/core.js"></script>
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
 
     <body>
 
-        <!-- Begin stack-design layout -->
+        <!-- Begin page content-->
 
-        <div class="stack-full-container">
+        <header id="header_outer">
+            
+            <div class="ocms-container ocms-container--large ocms-container--flex" id="header_inner">
 
-            <!-- Begin header content -->
+                <div class="ocms-cell--50pc">
 
-            <header class="stack-background--secondary stack-font--primary" id="stack_container_head">
-                
-                <div class="stack-container">
-
-                    <div class="stack-cell--5">
-
-                        <h1 class="stack-title">openCCMSYS</h1>
-
-                    </div>
-
-                    <div class="stack-cell--5">
-
-                        <nav class="stack-flex">
-
-                            <a class="stack-nav-link" href="/"><div class="stack-nav-block">
-                                <p>Home</p>
-                            </div></a>
-
-                            <a class="stack-nav-link" href="/hardware"><div class="stack-nav-block">
-                                <p>Client components</p>
-                            </div></a>
-
-                            <a class="stack-nav-link" href="/licenses"><div class="stack-nav-block">
-                                <p>Client Licenses</p>
-                            </div></a>
-
-                            <a class="stack-nav-link" href="/settings"><div class="stack-nav-block">
-                                <p>Settings</p>
-                            </div></a>
-
-                        </nav>
-
-                    </div>
+                    <h1 class="ocms-logo">openCCMSYS</h1>
 
                 </div>
 
-            </header>
+                <div class="ocms-cell--50pc">
+
+                    <!-- Site navigation -->
+
+                    <nav class="ocms-container--flex ocms-container--flex-align-right">
+
+                        <a href="/" class="ocms-nav--link"><div class="ocms-nav--block">
+                            <p>Home</p>
+                        </div></a>
+
+                        <a href="/hardware" class="ocms-nav--link"><div class="ocms-nav--block">
+                            <p>Hardware</p>
+                        </div></a>
+
+                        <a href="/licenses" class="ocms-nav--link"><div class="ocms-nav--block">
+                            <p>Licenses</p>
+                        </div></a>
+
+                        <a href="/settings" class="ocms-nav--link"><div class="ocms-nav--block">
+                            <p>Settings</p>
+                        </div></a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Begin body content -->
+
+        <main class="ocms-container ocms-container--large" id="main_outer">
 
 EOL;
 

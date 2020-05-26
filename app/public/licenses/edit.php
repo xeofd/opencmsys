@@ -9,13 +9,20 @@ require('../../private/required.php');
 open_write_connection();
 
 #Create the prepared statement and bind the parameters to it
-$statement = $dbt->prepare("UPDATE client_licenses SET client_license_use_date = :client_license_use_date WHERE client_license_link = :link_code");
+$statement = $dbt->prepare("UPDATE 
+                                client_license 
+                            SET 
+                                use_date = :edit_use_date,
+                                download_link = :edit_download_link
+                            WHERE link = :link_code");
 
 #Pull the data from the form
-$statement->bindParam(':client_license_use_date', $client_license_use_date);
+$statement->bindParam(':edit_use_date', $edit_use_date);
+$statement->bindParam(':edit_download_link', $edit_download_link);
 $statement->bindParam(':link_code', $link_code);
 
-$client_license_use_date = date("Y-m-d", strtotime($_POST['edit_license_use_date']));
+$edit_use_date = date("Y-m-d", strtotime($_POST['edit_use_date']));
+$edit_download_link = $_POST['edit_download_link'];
 $link_code = $_REQUEST['i'];
 
 #Execute the statement
@@ -26,7 +33,7 @@ $statement = null;
 $dbt = null;  
 
 #Reload to page and kill the script
-header('Location: /licenses');
+header("Location: /licenses/license.php?i=$link_code");
 die();
 
 ?>
