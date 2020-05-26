@@ -13,7 +13,7 @@ function open_read_connection(){
     # Open a read only connection to the database using RO credentials
     global $dbt;
     $dbu = "occmsysro";
-    $dbp = "KB65*XtcK6r!4pnjNHmdEH2K"; # REPLACE THIS WITH THE PASSWORD YOU SET WHEN CREATING THE DATABASE
+    $dbp = "{ENTER YOUR occmsysro PASSWORD}";
     $dbo = [
         PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
     ];
@@ -24,7 +24,8 @@ function open_write_connection(){
     # Open a read/write connection to the database using RW credentials
     global $dbt;
     $dbu = "occmsysrw";
-    $dbp = "Mf7*Vb68gM&UHQzAyrFCc8a4"; # REPLACE THIS WITH THE PASSWORD YOU SET WHEN CREATING THE DATABASE
+    $dbp = "{ENTER YOUR occmsysrw PASSWORD}";
+
     $dbo = [
         PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
     ];
