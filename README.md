@@ -7,5 +7,3 @@ The system runs on a PHP and MySQL backend with a basic HTML, CSS and JavaScript
 ## How to setup ##
 
 For help getting the system set up please see documentation/SETUP.md, this will give you some instructions on how to set up the database and ensure that the link to the database within the code is set up correctly.
-
-Alternativly you can visit <https://www.benfd.uk/projects/openccmsys/setup> to see a graphical version of setting up the system along with some videos.
