@@ -2,7 +2,7 @@
 
 // This code is used to select relevent data to be displayed on the hardware and license pages.
 // There is one set of data for each item, the selection pulls in all data it can from the database
-// and this allows for any combination of data to displayed.ocms-container--flex
+// and this allows for any combination of data to displayed
 
 # Pull in required files
 
@@ -12,14 +12,15 @@ require('../../private/required.php');
 
 function hardware_select($link_code){
 
-    # This function is used to select hardware data
+    // This function is used to select hardware data
 
     # Set global variables
 
     global $dbt;
+    global $display;
 
     try{
-        #Open the read only connection & set found false
+        #Open the read only connection
         open_read_connection();
 
         #Prepare the SQL selection
@@ -45,7 +46,6 @@ function hardware_select($link_code){
         $pull->setFetchMode(PDO::FETCH_ASSOC);
     
         #Pull in and display data
-        global $display;
         $display = $pull->fetch();
     
         #Null the PDO and close the connection
@@ -61,11 +61,12 @@ function hardware_select($link_code){
 
 function license_select($link_code){
 
-    # This function is used to select license data
+    // This function is used to select license data
 
     # Set global variables
 
     global $dbt;
+    global $display;
 
     try{
         #Open the read only connection & set found false
@@ -90,7 +91,6 @@ function license_select($link_code){
         $pull->setFetchMode(PDO::FETCH_ASSOC);
     
         #Pull in and display data
-        global $display;
         $display = $pull->fetch();
     
         #Null the PDO and close the connection

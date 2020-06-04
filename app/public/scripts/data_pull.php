@@ -15,7 +15,7 @@ if($homepage == true){
 
 function client_pull(){
 
-    # This function is used for displaying client information
+    // This function is used for displaying client information
 
     # Set global variables
 
@@ -59,7 +59,7 @@ function client_pull(){
 
 function hardware_pull(){
 
-    # This function is used for pulling in hardware data to be displayed in tables
+    // This function is used for pulling in hardware data to be displayed in tables
 
     # Set gloabl variables
 
@@ -138,7 +138,7 @@ function hardware_pull(){
 
 function license_pull(){
 
-    # This function is used to pull and display license information
+    // This function is used to pull and display license information
 
     # Set gloabl variables
 
