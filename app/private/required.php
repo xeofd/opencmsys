@@ -1,45 +1,56 @@
-<?php 
+<?php
 
-// Required functions for the system. All pages will require one of these functions to work properly.
+// Required functions for system functionality. 
+// This script must be loaded into every page to allow proper system function.
 
-# Set Error reporting
+# Set ERROR reporting
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Database connections
+// Database connection functions
 
 function open_read_connection(){
-    # Open a read only connection to the database using RO credentials
+    // Open READ only database connection
+
+    # Set global & local variables
     global $dbt;
-    $dbu = "occmsysro";
-    $dbp = "{ENTER YOUR occmsysro PASSWORD}";
-    $dbo = [
-        PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
-    ];
-    $dbt = new PDO('mysql:host=localhost;dbname=openccmsys;charset=utf8mb4', $dbu, $dbp, $dbo);
-};
+    $database_user = 'occmsysro';
+    $database_password = 'tvtE$pLH8yyh';
+    $database_error = [PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION];
 
-function open_write_connection(){
-    # Open a read/write connection to the database using RW credentials
+    # Set the databse connection
+    $database_connection = new PDO('mysql:host=localhost;dbname=openccmsys;charset=utf8mb4', $dbu, $dbp, $dbo);
+
+}
+
+function open_write_function(){
+    // Open READ/WRITE database connection
+
+    # Set global & local variables
     global $dbt;
-    $dbu = "occmsysrw";
-    $dbp = "{ENTER YOUR occmsysrw PASSWORD}";
+    $database_user = 'occmsysro';
+    $database_password = 'tvtE$pLH8yyh';
+    $database_error = [PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION];
 
-    $dbo = [
-        PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
-    ];
-    $dbt = new PDO('mysql:host=localhost;dbname=openccmsys;charset=utf8mb4', $dbu, $dbp, $dbo);
-};
+    # Set the databse connection
+    $database_connection = new PDO('mysql:host=localhost;dbname=openccmsys;charset=utf8mb4', $dbu, $dbp, $dbo);
 
-// Generators
+}
+
+// Page ID generator
 
 function generate_link(){
-    # Generate the random alphanumeric link for database items 
-    global $link_code;
-    # Set character set to be used for generating links
+    // Generate page ID
+
+    # Set global & local variables
+    global $page_id;
     $charset = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    $link_code = substr(str_shuffle($charset), 0, 24);
+
+    # Generate the page ID
+    $page_id = substr(str_shuffle($charset), 0, 24);
+
 }
+
 
 ?>

@@ -1,0 +1,147 @@
+/* Header */
+
+header{
+    margin: 0 0 20px 0;
+    background: var(--secondary-background-color);
+    color: var(--primary-special-color);
+}
+
+/* Navigation */
+
+.ocms-nav--link{
+    color: var(--primary-special-color);
+}
+.ocms-nav--link:hover{
+    color: var(--secondary-special-color);
+    border-bottom: 3px solid var(--secondary-special-color);
+}
+.ocms-nav--block{
+    padding: 20px;
+    width: 104px;
+    height: 60px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+    padding: 20px 0;
+    color: var(--secondary-text-color);
+    font-size: 15px;
+}
+.ocms-footer--logo{
+    line-height: 1.2;
+}
+.ocms-footer--logo > h1{
+    color: var(--primary-special-color);
+}
+
+/* Content */
+
+.ocms-content--block{
+    margin-bottom: 20px;
+    background: var(--secondary-background-color);
+    box-shadow: 0px 5px 15px var(--box-shadow);
+}
+.ocms-content--title{
+    padding: 5px;
+    text-align: center;
+    line-height: 0.5;
+    background: var(--primary-special-color);
+}
+.ocms-content--table{
+    padding: 0 10px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.ocms-table--row:hover{
+    background: var(--primary-background-color);
+}
+.ocms-table--data-head{
+    padding: 10px 0;
+}
+.ocms-table--data{
+    padding: 10px 0;
+    max-width: 100px;
+    cursor: pointer;
+    border-top: 1px solid var(--primary-special-color);
+}
+
+/* Inputs */
+
+input, textarea, select{
+    font-family: var(--primary-font-family);
+    color: var(--secondary-text-color);
+    border: 3px solid transparent;
+}
+.ocms-form--text-input, .ocms-form--select{
+    margin: 20px 0 0 0;
+    padding: 0 5px;
+    width: 100%;
+    height: 40px;
+    opacity: 0.5;
+}
+.ocms-form--text-area{
+    margin: 20px 0 0 0;
+    padding: 5px 5px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 80px;
+    opacity: 0.5;
+}
+.ocms-form--text-input:hover, .ocms-form--text-area:hover, .ocms-form--select:hover{
+    opacity: 0.8;
+}
+.ocms-form--text-input:focus, .ocms-form--text-area:focus, .ocms-form--select:focus{
+    opacity: 1;
+    border: 3px solid var(--primary-link-color);
+}
+
+.ocms-form--submit{
+    margin: 20px 0 15px 0;
+    padding: 10px 0;
+    width: 100%;
+    background: var(--primary-special-color);
+    color: var(--primary-text-color);
+}
+
+/* Status popus */
+
+.ocms-status{
+    padding: 0px 20px;
+    margin: 0 0 10px 0;
+}
+.ocms-status--error{
+    background: var(--status-error);
+}
+.ocms-status--warning{
+    background: var(--status-warning);
+}
+.ocms-status--success{
+    background: var(--status-success);
+}
+.ocms-status--text{
+    padding: 10px 0 0 0;
+    font-size: 20px;
+    line-height: 1;
+}
+.ocms-status--icon{
+    text-align: center;
+    padding: 23px 20px 0 0;
+}
+button.ocms-status--close{
+    color: var(--primary-text-color);
+    margin: 10px 0 5px 0;
+    height: 56px;
+    width: 100%;
+    background: transparent;
+    border: 3px solid transparent;
+}
+button.ocms-status--close:hover{
+    cursor: pointer;
+}
+button.ocms-status--close:focus{
+    border: 3px solid var(--primary-link-color);
+}

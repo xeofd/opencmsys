@@ -1,33 +1,11 @@
 /* 
-
-Core CSS for openCCMSYS, so long as this file is loaded in the site will look okay.
-Pair this with UI.css for improved looks.
-
-https://www.benfd.uk/projects/openccmsys
-
+//  CORE (core.css) styling for bloc-styling
+//  This contains all of the base-level styling for the system
+//  fonts > root.css > CORE > ui.css > OTHER
+//  More information: https://www.benfd.uk/projects/bloc-styling
 */
 
-/* Set root variables */
-:root{
-    /* Colour variables */
-    --primary-special-color: rgb(183, 28, 28);
-    --secondary-special-color: rgb(229, 57, 53);
-    --primary-background-color: rgb(100, 100, 100);
-    --secondary-background-color: rgb(54, 54, 54);
-    --box-shadow: rgb(61, 61, 61);
-    --primary-text-color: rgb(255, 255, 255);
-    --secondary-text-color: rgb(36, 36, 36);
-    --primary-link-color: rgb(0, 145, 234);
-    --secondary-link-color: rgb(64, 196, 255);
-    /* Fonts */
-    --primary-font-family: 'Roboto', sans-serif;
-    /* Status colors */
-    --status-error: #F4511E;
-    --status-warning: #FFA726;
-    --status-success: rgb(102, 187, 106);
-}
-
-/* Core styling */
+/* Base-line */
 
 body{
     margin: 0;
@@ -35,12 +13,12 @@ body{
     font-family: var(--primary-font-family);
     line-height: 1.5;
     font-size: 18px;
-    color: var(--primary-text-color);
+    color: var(--primary-font-color);
     background: var(--primary-background-color);
 }
 ::selection{
-    background: var(--primary-link-color);
-    color: var(--primary-text-color);
+    color: var(--primary-font-color);
+    background: var(--primary-highlight-color);
 }
 a{
     color: var(--primary-link-color);
@@ -52,93 +30,72 @@ a:hover{
     color: var(--secondary-link-color);
     border-bottom: 3px solid var(--secondary-link-color);
 }
-
-/* Material design icons */
-
-.md-36{
-    font-size: 30px;
+ul{
+    list-style-type: none;
 }
 
 /* Containers */
 
-.ocms-container{
+.bloc-container{
     margin: 0 auto;
-    padding: 0;
 }
-.ocms-container--flex{
+.bloc-container--flex{
     display: flex;
 }
-.ocms-container--status{
-    margin: 0 0 20px 0;
+.bloc-container--justify-center{
+    align-items: center;
+    justify-content: center;
 }
-.ocms-container--padded{
+.bloc-container--justify-right{
+    justify-content: right;
+}
+.bloc-container--padded{
     padding: 0 15px;
 }
+.bloc-container--center{
+    text-align: center;
+}
 
-/* Container sizes */
-
-.ocms-container--large{
+.bloc-container--large{
     width: 1440px;
 }
-.ocms-container--regular{
+.bloc-container--regular{
     width: 1024px;
 }
-.ocms-container--small{
+.bloc-container--small{
     width: 770px;
 }
 
 /* Cells */
 
-.ocms-cell--80pc{
-    width: 80%;
-    align-self: flex-start;
-}
-.ocms-cell--75pc{
-    width: 75%;
-    align-self: flex-start;
-}
-.ocms-cell--70pc{
-    width: 70%;
-    align-self: flex-start;
-}
-.ocms-cell--60pc{
-    width: 60%;
-    align-self: flex-start;
-}
-.ocms-cell--50pc{
-    width: 50%;
-    align-self: flex-start;
-}
-.ocms-cell--40pc{
-    width: 40%;
-    align-self: flex-start;
-}
-.ocms-cell--30pc{
-    width: 30%;
-    align-self: flex-start;
-}
-.ocms-cell--25pc{
-    width: 25%;
-    align-self: flex-start;
-}
-.ocms-cell--10pc{
+.bloc-cell--10pc{
     width: 10%;
-    align-self: flex-start;
 }
-.ocms-cell-breaker{
-    margin: 0 20px 0 0;
+.bloc-cell--20pc{
+    width: 20%;
+}
+.bloc-cell--30pc{
+    width: 30%;
+}
+.bloc-cell--40pc{
+    width: 40%;
+}
+.bloc-cell--50pc{
+    width: 50%;
+}
+.bloc-cell--60pc{
+    width: 60%;
+}
+.bloc-cell--70pc{
+    width: 70%;
+}
+.bloc-cell--80pc{
+    width: 80%;
+}
+.bloc-cell--90pc{
+    width: 90%;
 }
 
-/* Lists */
-
-.ocms-list--blanked{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* Forms */
-
-form{
-    padding: 0 15px;
+.bloc-cell--breaker{
+    margin-right: 20px;
 }

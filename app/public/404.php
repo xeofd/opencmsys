@@ -1,36 +1,37 @@
-<?php require('scripts/header.php'); ?>
+<?php
 
-            <!-- Begin body content -->
+require('./scripts/header.php');
 
-            <div class="stack-spacer-vertical"></div>
+?>
 
-            <div class="stack-container">
 
-                <main class="stack-container" id="stack_container_content">
+        <!-- START BODY -->
 
-                    <div class="stack-cell stack-cell--10 stack-cell--blank">
-                        
-                        <div class="stack-cell--title stack-cell--404">
+        <main id="bloc_app_main">
 
-                            <h1>Error 404: Page not found</h1>
+            <div class="bloc-container bloc-container--large" id="bloc_app_alert"></div>
 
-                        </div>
+            <div class="bloc-container bloc-container--large" id="bloc_app_content">
 
-                        <div class="stack-cell--max-width stack-cell--404-text">
+                <div class="bloc-container--center">
 
-                            <p>Sorry  the page you were looking for was not found.</p>
-                            <p>Please check you have the correct spelling</p>
+                    <h1>Error 404: File or page not found</h1>
+                    <p>Please check the spelling of the URL you have used or click <a href="/">this</a> to return to the homepage</p>
 
-                            <h2>OR</h2>
-
-                            <p>Click <a href="/">here</a> to go back to the homepage</p>
-
-                        </div>
-
-                    </div>
-
-                </main>
+                </div>
 
             </div>
 
-<?php require('scripts/footer.php'); ?>
+        </main>
+
+        <!-- END BODY -->
+
+        <?php 
+        
+            require('./scripts/footer.php');
+        
+        ?>
+        
+    </body>
+
+</html>

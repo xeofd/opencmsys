@@ -1,80 +1,114 @@
 <?php
 
-$homepage = true;
-
-require('scripts/header.php');
-require('scripts/data_pull.php');
+require('./scripts/header.php');
 
 ?>
 
-            <div class="ocms-container--status" id="status_container">
 
-                <script src="../js/core.js"></script>
-            
-            </div>
+        <!-- START BODY -->
 
-            <div class="ocms-container--flex" id="main_inner">
+        <main id="bloc_app_main">
 
-                <div class="ocms-content--block ocms-cell-breaker ocms-cell--50pc">
-                
-                    <div class="ocms-content--title">
-    
-                        <h2>Hardware list</h2>
+            <div class="bloc-container bloc-container--large" id="bloc_app_alert"></div>
+
+            <div class="bloc-container bloc-container--large" id="bloc_app_content">
+
+                <div class="bloc-container--flex" id="bloc_app_status_bar">
+
+                    <div class="bloc-cell--50pc bloc-content--status-bar bloc-cell--breaker" id="bloc_app_status_bar__hardware">
+
+                        <p>Open hardware jobs: </p>
     
                     </div>
-    
-                    <div>
-    
-                        <table class="ocms-content--table">
-                            <thead>
-                                <tr>
-                                    <th class="ocms-table--data-head">Hardware</th>
-                                    <th class="ocms-table--data-head">Client</th>
-                                    <th class="ocms-table--data-head">Issue</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php hardware_pull(); ?>
-                            </tbody>
-                        </table>
+
+                    <div class="bloc-cell--50pc bloc-content--status-bar" id="bloc_app_status_bar__licenses">
+
+                        <p>Total license count: </p>
     
                     </div>
-    
+
                 </div>
-    
-                <div class="ocms-content--block ocms-cell--50pc">
-    
-                    <div class="ocms-content--title">
-    
-                        <h2>Software list</h2>
-    
+
+                <div class="bloc-container--flex" id="bloc_app_lists">
+
+                    <div class="bloc-content--block bloc-cell--50pc bloc-cell--breaker">
+
+                        <div class="bloc-content--title">
+                            <h2>Hardware</h2>
+                        </div>
+
+                        <div>
+
+                            <table class="bloc-table" id="bloc_app_table__hardware">
+
+                                <thead>
+                                    <tr>
+                                        <td class="bloc-table--data-head">Hardware</td>
+                                        <td class="bloc-table--data-head">Client</td>
+                                        <td class="bloc-table--data-head">Status</td>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="bloc-table--row">
+                                        <td class="bloc-table--data">Dell XPS</td>
+                                        <td class="bloc-table--data">Glacier</td>
+                                        <td class="bloc-table--data">ACTIVE</td>
+                                        <td class="bloc-table--data"><a href="#" class="bloc-table--link">More info</a></td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
                     </div>
     
-                    <div>
-    
-                        <table class="ocms-content--table">
-                            <thead>
-                                <tr>
-                                    <th class="ocms-table--data-head">Software</th>
-                                    <th class="ocms-table--data-head">Client</th>
-                                    <th class="ocms-table--data-head">User</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php license_pull(); ?>
-                            </tbody>
-                        </table>
+                    <div class="bloc-content--block bloc-cell--50pc">
+
+                        <div class="bloc-content--title">
+                            <h2>Licenses</h2>
+                        </div>
+
+                        <div>
+
+                            <table class="bloc-table" id="bloc_app_table__hardware">
+
+                                <thead>
+                                    <tr>
+                                        <th class="bloc-table--data-head">Software</th>
+                                        <th class="bloc-table--data-head">Client</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="bloc-table--row">
+                                        <td class="bloc-table--data">Office 2016</td>
+                                        <td class="bloc-table--data">Glacier</td>
+                                        <td class="bloc-table--data"><a href="hardware/hardware.php?i=" class="bloc-table--link">More info</a></td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                        </div>
     
                     </div>
-    
+
                 </div>
 
             </div>
 
         </main>
 
-<?php 
+        <!-- END BODY -->
 
-require('scripts/footer.php');
+        <?php 
+        
+            require('./scripts/footer.php');
+        
+        ?>
+        
+    </body>
 
-?>
+</html>
