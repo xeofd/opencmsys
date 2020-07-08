@@ -14,13 +14,13 @@ function open_read_connection(){
     // Open READ only database connection
 
     # Set global & local variables
-    global $dbt;
+    global $database_connection;
     $database_user = 'occmsysro';
     $database_password = 'tvtE$pLH8yyh';
     $database_error = [PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION];
 
     # Set the databse connection
-    $database_connection = new PDO('mysql:host=localhost;dbname=openccmsys;charset=utf8mb4', $dbu, $dbp, $dbo);
+    $database_connection = new PDO('mysql:host=localhost;dbname=openccmsys;charset=utf8mb4', $database_user, $database_password, $database_error);
 
 }
 
@@ -28,13 +28,13 @@ function open_write_function(){
     // Open READ/WRITE database connection
 
     # Set global & local variables
-    global $dbt;
+    global $database_connection;
     $database_user = 'occmsysro';
     $database_password = 'tvtE$pLH8yyh';
     $database_error = [PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION];
 
     # Set the databse connection
-    $database_connection = new PDO('mysql:host=localhost;dbname=openccmsys;charset=utf8mb4', $dbu, $dbp, $dbo);
+    $database_connection = new PDO('mysql:host=localhost;dbname=openccmsys;charset=utf8mb4', $database_user, $database_password, $database_error);
 
 }
 

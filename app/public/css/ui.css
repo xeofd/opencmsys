@@ -73,3 +73,42 @@ input, button{
     font-family: var(--primary-font-family);
     border: 3px solid var(--primary-highlight-color);
 }
+
+/* Status bars */
+
+.bloc-status{
+    padding: 0px 20px;
+    margin: 0 0 10px 0;
+}
+.bloc-status--error{
+    background: var(--alert-color-error);
+}
+.bloc-status--warning{
+    background: var(--alert-color-warning);
+}
+.bloc-status--success{
+    background: var(--alert-color-success);
+}
+.bloc-status--text{
+    padding: 6px 0 0 0;
+    font-size: 20px;
+    line-height: 1;
+}
+.bloc-status--icon{
+    text-align: center;
+    padding: 25px 20px 0 0;
+}
+button.bloc-status--close{
+    color: var(--primary-text-color);
+    margin: 10px 0 5px 0;
+    height: 56px;
+    width: 100%;
+    background: transparent;
+    border: 3px solid transparent;
+}
+button.bloc-status--close:hover{
+    cursor: pointer;
+}
+button.bloc-status--close:focus{
+    border: 3px solid var(--primary-link-color);
+}

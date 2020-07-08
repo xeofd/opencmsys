@@ -1,6 +1,7 @@
 <?php
 
 require('./scripts/header.php');
+require('./scripts/data_pull.php');
 
 ?>
 
@@ -50,12 +51,11 @@ require('./scripts/header.php');
                                 </thead>
 
                                 <tbody>
-                                    <tr class="bloc-table--row">
-                                        <td class="bloc-table--data">Dell XPS</td>
-                                        <td class="bloc-table--data">Glacier</td>
-                                        <td class="bloc-table--data">ACTIVE</td>
-                                        <td class="bloc-table--data"><a href="#" class="bloc-table--link">More info</a></td>
-                                    </tr>
+                                    <?php 
+                                    
+                                        hardware_pull();
+                                    
+                                    ?>
                                 </tbody>
 
                             </table>
