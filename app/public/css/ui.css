@@ -5,110 +5,79 @@
 //  More information: https://www.benfd.uk/projects/bloc-styling
 */
 
-/* Header, Footer & Navigation */
+/* Logo && Informational elements */
 
 header{
-    margin-bottom: 20px;
-    color: var(--primary-brand-color);
-    background: var(--secondary-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+footer{
+    height: 20%;
+    font-size: 15px;
 }
 
+/* Navigational elements */
+
+nav{
+    height: 70%;
+}
 .bloc-navigation--block{
     color: var(--primary-brand-color);
-    padding: 20px 20px;
-    height: 60px;
-}
-.bloc-navigation--block:hover{
-    color: var(--secondary-brand-color);
-    border-bottom: 3px solid var(--secondary-brand-color);
-}
-
-.bloc-footer--logo{
-    color: var(--primary-brand-color);
-}
-
-/* Main content */
-
-.bloc-content--status-bar{
-    margin-bottom: 20px;
-    padding: 0 20px;
-    background: var(--primary-brand-color);
-    font-weight: bold;
-}
-
-.bloc-content--block{
-    background: var(--secondary-background-color);
-    box-shadow: 0px 5px 15px var(--box-shadow);
-}
-.bloc-content--title{
-    padding: 5px;
-    background: var(--primary-brand-color);
-    line-height: 0.5;
-    text-align: center;
-}
-
-.bloc-table{
-    padding: 0 10px;
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-}
-.bloc-table--row:hover{
-    background: var(--primary-background-color);
-}
-.bloc-table--data-head{
-    font-weight: bold;
     padding: 10px 0;
-}
-.bloc-table--data{
-    padding: 10px 0;
-    max-width: 100px;
-    cursor: pointer;
-    border-top: 1px solid var(--primary-brand-color);
-}
-
-/* Forms */
-
-input, button{
-    font-family: var(--primary-font-family);
-    border: 3px solid var(--primary-highlight-color);
-}
-
-/* Status bars */
-
-.bloc-status{
-    padding: 0px 20px;
-    margin: 0 0 10px 0;
-}
-.bloc-status--error{
-    background: var(--alert-color-error);
-}
-.bloc-status--warning{
-    background: var(--alert-color-warning);
-}
-.bloc-status--success{
-    background: var(--alert-color-success);
-}
-.bloc-status--text{
-    padding: 6px 0 0 0;
     font-size: 20px;
-    line-height: 1;
 }
-.bloc-status--icon{
-    text-align: center;
-    padding: 25px 20px 0 0;
+.bloc-navigation--sub-block{
+    color: var(--primary-brand-color);
+    padding: 10px 0;
+    font-size: 16px;
 }
-button.bloc-status--close{
-    color: var(--primary-text-color);
-    margin: 10px 0 5px 0;
-    height: 56px;
-    width: 100%;
-    background: transparent;
-    border: 3px solid transparent;
+.bloc-navigation--block:hover, .bloc-navigation--sub-block:hover{
+    color: var(--secondary-brand-color);
 }
-button.bloc-status--close:hover{
-    cursor: pointer;
+.bloc-navigation--sub-menu{
+    background: var(--navigation-secondary);
 }
-button.bloc-status--close:focus{
-    border: 3px solid var(--primary-link-color);
+
+.bloc-navigation--highlighted{
+    color: var(--primary-font-color);
+    background: var(--primary-brand-color);
+}
+.bloc-navigation--highlighted{
+    color: var(--primary-font-color);
+    background: var(--primary-brand-color);
+}
+.bloc-navigation--highlighted:hover{
+    color: var(--primary-font-color);
+}
+
+/* Cells */
+
+.bloc-cell--10pc{
+    width: 10%;
+}
+.bloc-cell--15pc{
+    width: 15%;
+}
+.bloc-cell--20pc{
+    width: 20%;
+}
+.bloc-cell--25pc{
+    width: 25%;
+}
+.bloc-cell--30pc{
+    width: 30%;
+}
+.bloc-cell--35pc{
+    width: 35%;
+}
+.bloc-cell--40pc{
+    width: 40%;
+}
+.bloc-cell--45pc{
+    width: 45%;
+}
+.bloc-cell--50pc{
+    width: 50%;
 }

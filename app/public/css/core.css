@@ -5,97 +5,61 @@
 //  More information: https://www.benfd.uk/projects/bloc-styling
 */
 
-/* Base-line */
+/* Primal elements */
 
-body{
+*{
     margin: 0;
     padding: 0;
-    font-family: var(--primary-font-family);
-    line-height: 1.5;
-    font-size: 18px;
-    color: var(--primary-font-color);
-    background: var(--primary-background-color);
 }
 ::selection{
     color: var(--primary-font-color);
-    background: var(--primary-highlight-color);
+    background: var(--primary-selection-color);
+}
+body{
+    /* Colors */
+    color: var(--primary-font-color);
+    background: var(--primary-background-color);
+    /* Text styling */
+    font-family: var(--primary-font-family);
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 18px;
 }
 a{
     color: var(--primary-link-color);
-    font-weight: bold;
     text-decoration: none;
-    border-bottom: 3px solid transparent;
+    font-weight: bold;
 }
 a:hover{
     color: var(--secondary-link-color);
-    border-bottom: 3px solid var(--secondary-link-color);
 }
-ul{
-    list-style-type: none;
+.bloc-hidden{
+    display: none;
+}
+
+/* APP primal elements */
+
+.bloc-app--main{
+    height: 100vh;
+}
+.bloc-app--sidebar{
+    color: var(--primary-brand-color);
+    background: var(--secondary-background-color);
+    margin: 0 20px 0 0;
+    height: 100%;
+    width: 15%;
+    min-width: 250px;
+    max-width: 380px;
+    text-align: center;
+    box-shadow: 1px 0px 5px var(--box-shadow);
+}
+.bloc-app-primary-content{
+    margin: 20px auto;
+    width: 80%;
 }
 
 /* Containers */
 
-.bloc-container{
-    margin: 0 auto;
-}
 .bloc-container--flex{
     display: flex;
-}
-.bloc-container--justify-center{
-    align-items: center;
-    justify-content: center;
-}
-.bloc-container--justify-right{
-    justify-content: right;
-}
-.bloc-container--padded{
-    padding: 0 15px;
-}
-.bloc-container--center{
-    text-align: center;
-}
-
-.bloc-container--large{
-    width: 1440px;
-}
-.bloc-container--regular{
-    width: 1024px;
-}
-.bloc-container--small{
-    width: 770px;
-}
-
-/* Cells */
-
-.bloc-cell--10pc{
-    width: 10%;
-}
-.bloc-cell--20pc{
-    width: 20%;
-}
-.bloc-cell--30pc{
-    width: 30%;
-}
-.bloc-cell--40pc{
-    width: 40%;
-}
-.bloc-cell--50pc{
-    width: 50%;
-}
-.bloc-cell--60pc{
-    width: 60%;
-}
-.bloc-cell--70pc{
-    width: 70%;
-}
-.bloc-cell--80pc{
-    width: 80%;
-}
-.bloc-cell--90pc{
-    width: 90%;
-}
-
-.bloc-cell--breaker{
-    margin-right: 20px;
 }
