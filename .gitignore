@@ -3,3 +3,6 @@
 
 #ignore any txt files
 *.txt
+
+#ignore old project files
+/app-old/

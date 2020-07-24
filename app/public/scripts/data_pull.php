@@ -21,7 +21,7 @@ function client_pull(){
     try{
 
         # Open a read-only database connection
-        open_read_connection();
+        open_db_connection("read");
         $found = false;
 
         # Prepair the SQL selection
@@ -66,7 +66,7 @@ function hardware_pull(){
 
     try{
         # Open the read only connection & set found false
-        open_read_connection();
+        open_db_connection("read");
         $found = false;
     
         # Prepare the SQL selection

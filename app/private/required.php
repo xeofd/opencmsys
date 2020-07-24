@@ -10,27 +10,22 @@ error_reporting(E_ALL);
 
 // Database connection functions
 
-function open_read_connection(){
-    // Open READ only database connection
+function open_db_connection($type){
+    // Open database connection
+
+    # Check connection type and set credentials as needed
+    if ($type == "read"){
+        # Set read only credentials
+        $database_user = 'occmsysro';
+        $database_password = 'tvtE$pLH8yyh';
+    } elseif ($type == "write"){
+        # Set read/write credentials
+        $database_user = 'occmsysro';
+        $database_password = 'tvtE$pLH8yyh';
+    } 
 
     # Set global & local variables
     global $database_connection;
-    $database_user = 'occmsysro';
-    $database_password = 'tvtE$pLH8yyh';
-    $database_error = [PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION];
-
-    # Set the databse connection
-    $database_connection = new PDO('mysql:host=localhost;dbname=openccmsys;charset=utf8mb4', $database_user, $database_password, $database_error);
-
-}
-
-function open_write_function(){
-    // Open READ/WRITE database connection
-
-    # Set global & local variables
-    global $database_connection;
-    $database_user = 'occmsysro';
-    $database_password = 'tvtE$pLH8yyh';
     $database_error = [PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION];
 
     # Set the databse connection
